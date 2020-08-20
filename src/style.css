@@ -1,0 +1,18 @@
+#root{
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px, 1fr)) ;
+    grid-row: 20px; 
+}
+
+
+.windown{
+    background-color: hotpink;
+    width: 50%;
+    height: 211px;
+    display: flex;
+}
+
+#windown{
+    display: none;
+} 
