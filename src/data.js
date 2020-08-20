@@ -10,10 +10,13 @@ export const pokedex = (datos) => {
     </div>
     `
 }
-
 /*
 let caracteristicaPrincipal = [datos.num,datos.name,datos.type];
 ${caracteristicaPrincipal}*/
 export const tipo = () => {
-  return "hola"
+  return "hola";
+
 };
+
+
+

@@ -6,7 +6,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <div class="logo">
+        <img src="#" alt="">
+      </div>
+      <div class="search"> 
+        <input type="text" class="search" placeholder="Busca tu Pokemon">
+      </div>
+      <section class="filters">
+        <select  class="filter type">
+          <option value="" disabled selected>TYPE</option>
+          <option value="all-types" default>ALL TYPES</option>
+          <option value="normal">NORMAL</option>
+          <option value="fighting">FIGHTING</option>
+          <option value="flying">FLYING</option>
+          <option value="poison">POISON</option>
+          <option value="ground">GROUND</option>
+          <option value="rock">ROCK</option>
+          <option value="bug">BUG</option>
+          <option value="ghost">GHOST</option>
+          <option value="steel">STEEL</option>
+          <option value="fire">FIRE</option>
+          <option value="water">WATER</option>
+          <option value="grass">GRASS</option>
+          <option value="electric">ELECTRIC</option>
+          <option value="psychic">PSYCHIC</option>
+          <option value="ice">ICE</option>
+          <option value="dragon">DRAGON</option>
+          <option value="dark">DARK</option>
+          <option value="fairy">FAIRY</option>
+        </select> 
+        <select class="filter pc">
+          <option value="" disabled selected>PC</option> 
+          <option value="HIGHER">HIGHER</option>
+          <option value="LESS">LESS</option>
+        </select>
+      </section>      
+    </header>
+    <main>
+     <div id="root"></div>
+    </main>
+    <section id="window" class="window">
+      <div id="moreInformation"></div> 
+      <div id="buttons">
+        <button type="button" id="close">X</button>
+       <button type="button" id="change">-></button>
+      </div>   
+    </section>
+    <footer>
+      <h2 class="titulo-final">&copy; melissa/siannet</h2>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
