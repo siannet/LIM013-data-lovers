@@ -6,13 +6,13 @@
 }
 
 
-.windown{
+.window{
     background-color: hotpink;
     width: 50%;
     height: 211px;
     display: flex;
 }
 
-#windown{
+#window{
     display: none;
 } 
