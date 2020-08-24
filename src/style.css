@@ -8,7 +8,6 @@ body{
 }
 
 /* barra de filtro */
-/* #navBar{ */
 header{
         background: blue;
         width: 100%;
@@ -18,7 +17,6 @@ header{
         align-items: center;
         position: fixed;
         top: 0;
-        /* transition: top 0.5s; */
 }
 
 .pokedex{
@@ -51,16 +49,3 @@ header{
 } 
     
     
-
-/* @media(min-width: 1200px){
-}
-
-@media(min-width:800px) and (max-width:1199px){
-
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
