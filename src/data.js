@@ -4,9 +4,11 @@
 export const pokedex = (datos) => {
     return `
     <div class="pokedex">
-      <p> ${datos.num} ${datos.name}</p>
+      <p> ${datos.num}</p>
+      <p>${datos.name}</p> 
       <img src="${datos.img}">
-      <p>Tipo: ${datos.type} PC: ${Object.values(datos.stats)[3]}</p>
+      <p>Tipo: ${datos.type}</p>
+      <p> PC: ${Object.values(datos.stats)[3]}</p>
     </div>
     `
 }
