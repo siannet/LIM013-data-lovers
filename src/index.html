@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="#" alt="">
-      </div>
-      <div> 
-        <input type="text" class="search" placeholder="Busca tu Pokemon">
-      </div>
-      <section class="filters">
+   <div class="container">
+    <header class="header">
+        <img src="#" alt="" class="image">
+        <input type="text" class="search" placeholder="Busca tu Pokemon por nombre o N° de pokedex">
+       <div class="filter-wrap">
         <select  class="filter type">
-          <option value="" disabled selected>TYPE</option>
+          <option value="" disabled selected class="name">TYPE</option>
           <option value="all-types" default>ALL TYPES</option>
-          <option value="normal">NORMAL</option>
-          <option value="fighting">FIGHTING</option>
-          <option value="flying">FLYING</option>
-          <option value="poison">POISON</option>
-          <option value="ground">GROUND</option>
-          <option value="rock">ROCK</option>
-          <option value="bug">BUG</option>
-          <option value="ghost">GHOST</option>
-          <option value="steel">STEEL</option>
-          <option value="fire">FIRE</option>
-          <option value="water">WATER</option>
-          <option value="grass">GRASS</option>
-          <option value="electric">ELECTRIC</option>
-          <option value="psychic">PSYCHIC</option>
-          <option value="ice">ICE</option>
-          <option value="dragon">DRAGON</option>
-          <option value="dark">DARK</option>
-          <option value="fairy">FAIRY</option>
+          <option value="normal"><p>Normal</p></option>
+          <option value="fighting"><p>Fighting</p></option>
+          <option value="flying"><p>Flying</p></option>
+          <option value="poison"><p>Poison</p></option>
+          <option value="ground"><p>Ground</p></option>
+          <option value="rock"><p>Rock</p></option>
+          <option value="bug"><p>Bug</p></option>
+          <option value="ghost"><p>Ghost</p></option>
+          <option value="steel"><p>Steel</p></option>
+          <option value="fire"><p>Fire</p></option>
+          <option value="water"><p>Water</p></option>
+          <option value="grass"><p>Grass</p></option>
+          <option value="electric"><p>Electric</p></option>
+          <option value="psychic"><p>Psychic</p></option>
+          <option value="ice"><p>Ice</p></option>
+          <option value="dragon"><p>Dragon</p></option>
+          <option value="dark"><p>Dark</p> </option>
+          <option value="fairy"><p>Fairy</p></option>
         </select> 
         <select class="filter pc">
           <option value="" disabled selected>PC</option> 
           <option value="HIGHER">HIGHER</option>
           <option value="LESS">LESS</option>
         </select>
-      </section>      
+       </div>
     </header>
-    <main>
-     <div id="root"></div>
-    </main>
+     <nav id="porcentage"></nav>
+     <div id="root" class="boxPokedex"></div>
     <section id="window" class="window">
       <div id="moreInformation"></div> 
       <div id="buttons">
         <button type="button" id="close">X</button>
-       <button type="button" id="change">-></button>
-      </div>   
+        <button type="button" id="change">-></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </section>
-    <footer>
-      <h2 class="titulo-final">&copy; melissa/siannet</h2>
+    <footer class="footer">
+      <p class="copyW">&copy; melissa/siannet</p>
     </footer>
-    <script src="main.js" type="module"></script>
-  </body>
+   </div> 
+  </body> 
+  <script src="main.js" type="module"></script>
 </html>

@@ -1,66 +1,283 @@
-body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-}
+ body{
+     background: #E9ECF4;
+ }
 
-/* barra de filtro */
-/* #navBar{ */
-header{
-        background: blue;
+@media screen and (max-width: 524px){
+
+/* fondo */
+     header {
+        background: grey;
         width: 100%;
         height: 80px;
         display: flex;
-        justify-content: space-around; 
         align-items: center;
-        position: fixed;
-        top: 0;
-        /* transition: top 0.5s; */
 }
 
-.pokedex{
-    background-color: orange;
-    border-radius: 20px;
-    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
-    margin: 10px;
-    text-align: center;
-
+    .filter{
+       width: 150px;
+       margin: auto;
+       position: relative;
+       user-select: none;
+       background: lightgray;
+       cursor: pointer;
+       padding: 10px 20px;
 }
+/* orden de los pokemones */
 
+    .container .boxPokedex{
+        width: 100%;
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns:repeat(2,1fr) ;
+        margin: 10px auto;
+    } 
 
-#root{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-}
+/* estilo caja pokemon */
 
-/* ventana emergente */
-.window{
-        background-color: hotpink;
-        width: 50%;
-        height: 211px;
-        display: flex;
-}
-    
-#window{
-        display: none;
-} 
-    
-    
-
-/* @media(min-width: 1200px){
-}
-
-@media(min-width:800px) and (max-width:1199px){
-
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    .pokedex {
+        border-radius: 20px;
+        box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+        margin: 10px;
+        text-align: center;
     }
-  } */
+
+    .container .footer{
+        background:olive;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #window {
+    
+        background: rgba(33, 41, 52, .85);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0; 
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        display: none;
+    }
+
+    .search{
+      align-items: center;
+
+    }
+
+    .imgType{
+        width: 30px;
+    }
+
+    /* .typeQuantity{
+        width: 100%;
+    } */
+}
+
+@media screen and (min-width: 524px) and (max-width: 824px){
+
+/* fondo */
+
+        header {
+        background: grey;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+}
+    .filter{
+       width: 250px;
+       margin: auto;
+       position: relative;
+       user-select: none;
+       background: lightgray;
+       cursor: pointer;
+       padding: 10px 20px;
+}
+  
+/* orden de los pokemones */
+
+ .container .boxPokedex{
+    width: 90%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(3,1fr) ;
+    margin: 10px auto;
+    } 
+
+/* estilo caja pokemon */
+
+    .pokedex {
+        border-radius: 20px;
+        box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+        margin: 10px;
+        text-align: center;
+    }
+
+    .container .footer{
+        background:yellow;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #window {
+    
+        background: rgba(33, 41, 52, .85);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0; 
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        display: none;
+    }
+
+
+    .imgType{
+        width: 40px;
+    }
+
+ }
+
+ 
+    
+ @media screen and (min-width: 824px) and (max-width:1240px) {
+
+/* fondo */
+         header {
+        background: grey;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+}
+  .filter{
+       width: 350px;
+       margin: auto;
+       position: relative;
+       user-select: none;
+       background: lightgray;
+       cursor: pointer;
+       padding: 10px 20px;
+}
+
+/* orden de los pokemones */
+
+    .container .boxPokedex{
+        width: 80%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns:repeat(4,1fr) ;
+        margin: 10px auto;   
+    } 
+
+/* estilo caja pokemon */
+
+    .pokedex {
+        border-radius: 20px;
+        box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+        margin: 10px;
+        text-align: center;
+    }
+
+    .container .footer{
+        background:grey;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #window {
+    
+        background: rgba(33, 41, 52, .85);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0; 
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        display: none;
+    }
+
+    .imgType{
+        width: 45px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+
+    /* fondo */
+             header {
+            background: grey;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+    }
+      .filter{
+           width: 350px;
+           margin: auto;
+           position: relative;
+           user-select: none;
+           background: lightgray;
+           cursor: pointer;
+           padding: 10px 20px;
+    }
+    
+    /* orden de los pokemones */
+    
+        .container .boxPokedex{
+            width: 80%;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns:repeat(5,1fr) ;
+            margin: 10px auto;   
+        } 
+    
+    /* estilo caja pokemon */
+    
+        .pokedex {
+            border-radius: 20px;
+            box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+            margin: 10px;
+            text-align: center;
+        }
+    
+        .container .footer{
+            background:grey;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #window {
+    
+            background: rgba(33, 41, 52, .85);
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0; 
+            display: flex;
+            position: fixed;
+            z-index: 999;
+            display: none;
+        }
+
+
+        .imgType{
+            width: 45px;
+        }
+    }
+    
+#window {
+    display: none;
+}
