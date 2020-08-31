@@ -5,25 +5,25 @@ import data from './data/pokemon/pokemon.js';
 
 /*console.log(data, tipo);*/
 
-const root = document.getElementById("root");
+let root = document.getElementById("root");
 let search= document.querySelector(".search");
 const type=document.querySelector(".type");
 const pc=document.querySelector(".pc");
-const window= document.getElementById("window");
-//const btnClick= document.getElementsByClassName("pokedex");
+const moreInformation= document.getElementById("moreInformation");
 const btnClose= document.getElementById("close");
 
-
-//window.innerHTML=  data.pokemon.map(pokedex).join(" ");
-
-
 const characteristics = (dataIndex) => {
+    let imgTipo= "";
+    dataIndex.type.forEach((tipo)=>{
+    imgTipo += `<img class="imgType" src="./img/${tipo}.png"/>`;
+  });
     return `
     <div class="characteristics">
-      <p>N° ${parseInt(dataIndex.num)}</p>
-      <p><strong>${dataIndex.name.toUpperCase()}</strong></p> 
       <img src="${dataIndex.img}">
-      <p>Tipo: ${dataIndex.type}</p>
+      <p>${dataIndex.num} <strong>${dataIndex.name.toUpperCase()}</strong></p>
+      <p>${Object.values(dataIndex.size)[1]} | ${imgTipo} | ${Object.values(dataIndex.size)[0]}</p>
+      <p><strong>About: </strong><br>${dataIndex.about}</p>    
+      
       <p> PC: ${Object.values(dataIndex.stats)[3]}</p>
     </div>
     `
@@ -32,17 +32,19 @@ const characteristics = (dataIndex) => {
 /*----------------Presentación de la Pokedex----------------------*/
 root.innerHTML=  data.pokemon.map(pokedex).join(" ");
 
-let pokemon = document.getElementsByClassName("pokedex");
-for(let i = 0; i < pokemon.length; i++){
-   
-    pokemon[i].addEventListener('click',function(){
-        window.style.display="block";
-        window.innerHTML=characteristics(data.pokemon[i]);
-    });
-}
+/*-----------------Ventana modal---------------------------------*/
+root.addEventListener('click',(e)=>{
+    
+    for(let j = 0; j < data.pokemon.length; j++){
+        if(data.pokemon[j].num==e.target.id){
+        modalWindow.style.display="block";
+        moreInformation.innerHTML=characteristics(data.pokemon[j]);
+        }
+    }
+ });
 
-btnClose.addEventListener("click",function() {
-    window.style.display="none";
+ btnClose.addEventListener("click",function() {
+    modalWindow.style.display="none";
 })
 
 /*---------------------Filtrar por Tipo--------------------------------*/
@@ -90,7 +92,7 @@ search.addEventListener('keyup',()=>{  //mejorar la búsqueda por nro de pokedex
     //const tipoOrdenadoPorPC = sortPcOption(dataFiltradaPorTipo, pc.value);
     
     root.innerHTML="";
-    
+    console.log(searchFiltered);
     if(Object.entries(searchFiltered).length === 0){         //Si el usuario ingresa mal el nombre del Pokemon
         root.innerHTML=`
         <div class="pikachu-search">
@@ -108,3 +110,20 @@ search.addEventListener('keyup',()=>{  //mejorar la búsqueda por nro de pokedex
     }   
     //console.log(searchFiltered)
 });
+
+
+
+
+        
+
+/*-----------------Ventana modal---------------------------------*/
+/*let pokemon = root.querySelectorAll(".pokedex");
+console.log(pokemon);
+for(let i = 0; i < pokemon.length; i++){
+   
+    pokemon[i].addEventListener('click',function (){
+        modalWindow.style.display="block";
+        moreInformation.innerHTML=characteristics(data.pokemon[i]);
+    });
+}
+*/
