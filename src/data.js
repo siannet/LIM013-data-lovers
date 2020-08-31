@@ -6,7 +6,7 @@ export const pokedex = (datos) => {
   });
 
     return `
-    <div class="pokedex">
+    <div class="pokedex" id= ${datos.num} >
       <p>N° ${parseInt(datos.num)}</p>
       <p><strong>${datos.name.toUpperCase()}</strong></p> 
       <img src="${datos.img}">
