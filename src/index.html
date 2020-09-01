@@ -15,7 +15,7 @@
         <select  class="filter type">
           <option value="" disabled selected class="name">TYPE</option>
           <option value="all-types" default>ALL TYPES</option>
-          <option value="normal"><p>Normal</p></option>
+          <option value="normal" data-icon= "./img/normal.png">Normal</option>
           <option value="fighting"><p>Fighting</p></option>
           <option value="flying"><p>Flying</p></option>
           <option value="poison"><p>Poison</p></option>
@@ -42,7 +42,7 @@
        </div>
     </header>
      <nav id="porcentage"></nav>
-     <div id="root" class="boxPokedex"></div>
+     <div id="root" class="listPokedex"></div>
     <section id="modalWindow" class="modalWindow">
       <div id="buttons">
         <button type="button" id="close">X</button>
@@ -53,6 +53,7 @@
       <p class="copyW">&copy; melissa/siannet</p>
     </footer>
    </div> 
+   <audio id="demo" src="./img/pikachu.mp3"></audio>
   </body> 
   <script src="main.js" type="module"></script>
 </html>
