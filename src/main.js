@@ -90,7 +90,7 @@ const characteristics = (dataIndex) => {
     <figcaption><small>${tipo}</small></figcaption>
   </figure>`;
   });
-  let evolution = "";
+  //let evolution = "";
   //console.log(dataIndex.evolution["next-evolution"][0].name);
   //console.log(dataIndex.evolution["next-evolution"][0]["next-evolution"][0].name);
   return `
