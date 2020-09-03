@@ -198,6 +198,20 @@ border-radius: 20px;
     top: 13%;
     position: absolute;
 }
+
+figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  figure{
+      display: inline-block;
+  }
+  /* Visible texto */
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+  }
+
 .plus{
     border-radius: 50px;
     width: 20%;
