@@ -134,11 +134,11 @@ let changeTypeEvent = () => {
   const dataOrdenadaPorPC = sortPcOption(data.pokemon, pc.value);
   
   //Muestra la cantidad por tipo seleccionado + los Pokemon
-  porcentage.innerHTML=`
+  /*porcentage.innerHTML=`
   <div class="typeQuantity">
     <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
   </div>
-  `
+  `*/
   root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ");
 
   //Muestra todos los tipos, es decir la Pokedex inicial u ordena la Pokedex sin ningun tipo seleccionado
