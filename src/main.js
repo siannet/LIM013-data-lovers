@@ -4,7 +4,7 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 let root = document.getElementById("root");
-let porcentage = document.querySelector("#pocentage");
+let porcentage = document.querySelector("#porcentage");
 let search = document.querySelector(".search");
 const type = document.querySelector(".type");
 const pc = document.querySelector(".pc");
@@ -132,18 +132,20 @@ let changeTypeEvent = () => {
   const dataFiltradaPorTipo = filterTypeOption(data.pokemon, type.value);
   const tipoOrdenadoPorPC = sortPcOption(dataFiltradaPorTipo, pc.value); //lee el filtro PC cuando se active
   const dataOrdenadaPorPC = sortPcOption(data.pokemon, pc.value);
-  
+
+    porcentage.innerHTML= `
+    <div class="typeQuantity">
+      <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
+    </div>`;
+
   //Muestra la cantidad por tipo seleccionado + los Pokemon
-  /*porcentage.innerHTML=`
-  <div class="typeQuantity">
-    <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
-  </div>
-  `*/
+  
   root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ");
 
   //Muestra todos los tipos, es decir la Pokedex inicial u ordena la Pokedex sin ningun tipo seleccionado
   if (type.value == "all-types" || type.value == "") {
     root.innerHTML = dataOrdenadaPorPC.map(pokedex).join(" "); //se puso sort para que cambiara por PC
+    porcentage.innerHTML="";
   }
 }
 type.addEventListener('change', changeTypeEvent);
