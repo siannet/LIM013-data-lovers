@@ -4,19 +4,36 @@ import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 let root = document.getElementById("root");
+let porcentage = document.querySelector("#pocentage");
 let search = document.querySelector(".search");
 const type = document.querySelector(".type");
 const pc = document.querySelector(".pc");
-const moreInformation = document.getElementById("moreInformation");
 const btnClose = document.getElementById("close");
 
 /*--------------Mostrar datos de la Pokedex---------------------*/
 const pokedex = (datos) => {
   let imgTipo = "";
   datos.type.forEach((tipo) => {
-    imgTipo += `<img class="imgType" src="./img/${tipo}.png"/>`;
+    imgTipo += `<figure>
+    <img class="imgType" src="./img/${tipo}.png"/>
+    <figcaption><small>${tipo}</small></figcaption>
+  </figure>`;
   });
-
+  let imgDebil = "";
+  datos.weaknesses.forEach((debil) => {
+    imgDebil += `<figure>
+    <img class="imgType" src="./img/${debil}.png"/>
+    <figcaption><small>${debil}</small></figcaption>
+  </figure>`;
+  });
+  let movimiento=[];
+  datos["quick-move"].forEach((mov) => {
+    movimiento.push(mov.name);
+  });
+  let ataque=[];
+  datos["special-attack"].forEach((mov) => {
+    ataque.push(mov.name);
+  });
   return `
       <div class="boxPokedex">
         <div class="cardPokedex">
@@ -24,15 +41,39 @@ const pokedex = (datos) => {
             <p>N° ${parseInt(datos.num)}</p>
             <p><strong>${datos.name.toUpperCase()}</strong></p> 
             <img src="${datos.img}">
-            <p>Tipo: ${imgTipo}</p>
-            <p> PC: ${Object.values(datos.stats)[3]}</p>
+            <table style="margin: 0 auto;">
+              <tr>
+              <th>Type: </th>
+                <th>${imgTipo}</th>
+              </tr>
+              <tr>
+              <td></td>
+                <td><small>${datos.type.join(" / ")}</small></td>
+              </tr>
+              </table>
+            <p><strong>PC: </strong>${Object.values(datos.stats)[3]}</p>
           </div>
           <div class="card-back">
             <p>N° ${parseInt(datos.num)}</p>
             <p><strong>${datos.name.toUpperCase()}</strong></p> 
-            <img src="${datos.img}">
-            <p>Tipo: ${imgTipo}</p>
-            <p> PC: ${Object.values(datos.stats)[3]}</p>
+            <span><small>${Object.values(datos.size)[1]}</small> |${imgTipo}| <small>${Object.values(datos.size)[0]}</small></span>
+            <hr>
+            <p><strong>Base stats</strong></p> 
+            <table style="margin: 0 auto;">
+              <tr>
+                <th>${Object.values(datos.stats)[0]}</th>
+                <th>${Object.values(datos.stats)[1]}</th>
+                <th>${Object.values(datos.stats)[2]}</th>
+              </tr>
+              <tr>
+                <td><small><em>Attack</em></small></td>
+                <td><small><em>Defense</em></small></td>
+                <td><small><em>Stamina</em></small></td>
+              </tr>
+            </table>
+            <p><strong> Fast attacks: </strong>${movimiento.join(", ")}</p>
+            <p><strong> Special attacks: </strong>${ataque.join(", ")}</p>
+            <p><strong>Weaknesses:</strong>${imgDebil}</p>
             <button onclick="document.getElementById('demo').play()" id= "${datos.num}" type="button">+</button>
           </div>
         </div>
@@ -44,16 +85,22 @@ const pokedex = (datos) => {
 const characteristics = (dataIndex) => {
   let imgTipo = "";
   dataIndex.type.forEach((tipo) => {
-    imgTipo += `<img class="imgType" src="./img/${tipo}.png"/>`;
+    imgTipo += `<figure>
+    <img class="imgType" src="./img/${tipo}.png"/>
+    <figcaption><small>${tipo}</small></figcaption>
+  </figure>`;
   });
+  let evolution = "";
+  //console.log(dataIndex.evolution["next-evolution"][0].name);
+  //console.log(dataIndex.evolution["next-evolution"][0]["next-evolution"][0].name);
   return `
-    <div class="characteristics">
-      <img src="${dataIndex.img}">
+    <div class="modalContent">
+      <img class= "pokemonImg" src="${dataIndex.img}">
       <p>${dataIndex.num} <strong>${dataIndex.name.toUpperCase()}</strong></p>
-      <p>${Object.values(dataIndex.size)[1]} | ${imgTipo} | ${Object.values(dataIndex.size)[0]}</p>
+      <p><small><strong>Region: </strong>${Object.values(dataIndex.generation)[1].toUpperCase()}</small></p>  
+      <spam>Weight: ${Object.values(dataIndex.size)[1]} | ${imgTipo} | Height: ${Object.values(dataIndex.size)[0]}</spam>
+      <hr>
       <p><strong>About: </strong><br>${dataIndex.about}</p>    
-      
-      <p> PC: ${Object.values(dataIndex.stats)[3]}</p>
     </div>
     `
 }
@@ -63,14 +110,19 @@ root.innerHTML = data.pokemon.map(pokedex).join(" ");
 
 /*-----------------Ventana modal---------------------------------*/
 root.addEventListener('click', (e) => {
-  for (let j = 0; j < data.pokemon.length; j++) {
-    if (data.pokemon[j].num == e.target.id) {
+  const moreInformation = document.getElementById("moreInformation");
+  for (let i = 0; i < data.pokemon.length; i++) {
+    if (data.pokemon[i].num == e.target.id) {
       modalWindow.style.display = "block";
-      moreInformation.innerHTML = characteristics(data.pokemon[j]);
+      moreInformation.innerHTML = characteristics(data.pokemon[i]);
     }
   }
 });
-
+window.addEventListener("click", function (e) {
+  if(e.target ==modalWindow){
+  modalWindow.style.display = "none";
+  }
+})
 btnClose.addEventListener("click", function () {
   modalWindow.style.display = "none";
 })
@@ -82,11 +134,12 @@ let changeTypeEvent = () => {
   const dataOrdenadaPorPC = sortPcOption(data.pokemon, pc.value);
   
   //Muestra la cantidad por tipo seleccionado + los Pokemon
-  root.innerHTML = `
-    <div class="typeQuantity">
-      <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
-    </div>
-    ` + dataFiltradaPorTipo.map(pokedex).join(" ");
+  porcentage.innerHTML=`
+  <div class="typeQuantity">
+    <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
+  </div>
+  `
+  root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ");
 
   //Muestra todos los tipos, es decir la Pokedex inicial u ordena la Pokedex sin ningun tipo seleccionado
   if (type.value == "all-types" || type.value == "") {
@@ -125,7 +178,21 @@ search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de poke
   //console.log(searchFiltered)
 });
 
+/*--------Hamburguesa----------------------------*/
+let btnHamburger= document.getElementById("iHamburger");
+let enlaces= document.getElementById("enlaces");
+let circleSize=0;
 
+btnHamburger.addEventListener("click",()=>{
+  if (circleSize==0) {
+    enlaces.className=("enlaces hideCircle");
+    circleSize=1;
+  }else{
+    enlaces.classList.remove("hideCircle");
+    enlaces.className=("enlaces showCircle");
+    circleSize=0;
+  }
+})
 
 
 
