@@ -4,11 +4,9 @@
 } 
  body{
     width: 100%;
-    /* background: url(img/oficial2.jpg);  */
     background: #c2e59c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to top, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     background-size: cover;
      cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto;
@@ -20,27 +18,33 @@
     align-items: center;
 } 
 
- header  {
-    width: 100%;
-    height: 102px;
-    background: url(img/oficial2.jpg);
-    background-attachment: fixed;
-    background-position: center;
+.fondo{
+    height: 100%;
+   background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
+} 
+
+ header nav {
+    height: 100%;
+     top: 0%;
+    height: 74px;
+    width: 100%;
     display: flex;
-    position: fixed;
     justify-content: space-between;
+    position: fixed;
 }
 
-.image{
-    width: 115px;
-    height: 135px;
-    left: 46px;
-    top: -32px;
-    display: flex;
-    background: url(logito.jpg);
+.stop{
+   background: #5a6d10;
+   position: fixed;
 }
+
+.container{
+    width: 100%;
+}
+
 
 .iHamburger{
     display: none;
@@ -64,33 +68,57 @@
     color: white;
     cursor: pointer;
     padding: 4px 8px;
-    left: 35%;
+    left: 45%;
+    z-index: 320;
+    position: fixed;
+    margin-top: 10px;
+}
+
+.type{
+    width: 12%;
+    margin: auto;
+    user-select: none;
+    background: #315588;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    left: 30%;
+    z-index: 320;
+    position: fixed;
+    margin-top: 10px;
 }
 
 
 .search{
+    top: 40px;
     width: 164px;
 width: 25%;
 height: 25px;
-left: 35%;
+left: 31%;
 background: #F6F6F6;
 box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.25);
 border-radius: 20px;
+z-index: 300;
+position: fixed;
 }
 
+
  .listPokedex{
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-gap: 15px;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ; /*cambiar */
-    margin: 10px auto;
+    margin-top:35px;
     } 
-
+.stop{
+    z-index: 50;
+}
 
 /* estilo caja pokemon */
 .boxPokedex{
-    width: 168px;
-    min-height: 250px;
+    width: 200px;
+    min-height: 328px;
     display: flex;
 }
 
@@ -107,11 +135,7 @@ border-radius: 20px;
     box-sizing: border-box;
 }
 
- #root{
-    left: 15%;
-    top: 102px;
-    /* background: rgba(0, 0, 0, 0.2); */
-} 
+
 .boxPokedex:hover .cardPokedex {
     transform: rotateY(180deg);
   }
@@ -129,6 +153,15 @@ border-radius: 20px;
     transform: rotateY(180deg);
   }
 
+.front{
+    padding-top: 20%;
+}
+
+.back{
+    padding: 5%;
+    padding-top: 8%;
+}
+
   .filter-wrap{
     width: 100%;
     height: 37px;
@@ -143,6 +176,7 @@ border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /* ventana modal */
@@ -154,7 +188,7 @@ border-radius: 20px;
     height: 100%;
     display: flex;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     display: none;
     background: rgba(0, 0, 0, .6);
 }
@@ -206,9 +240,10 @@ figcaption {
 .plus{
     border-radius: 50px;
     width: 20%;
+    padding: 2%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 425px){
 
     .iHamburger{
         display: flex;
@@ -236,12 +271,12 @@ figcaption {
 
     .showCircle{
         clip-path: circle(0% at 100% 0%);
-        z-index: 1;
+        z-index: 4;
     }
 
     .hideCircle{
         clip-path: circle(150% at 100% 0%);
-        z-index: 1;
+        z-index: 4;
     }
 
     .container{
@@ -254,7 +289,7 @@ figcaption {
         top: 25%;
         box-shadow: 0 3px 15px rgba(100, 100, 100, 0.6);
         border-radius: 20px;
-        margin: 10px;
+        margin: 0px;
         text-align: center;
         display: flex;
         position: absolute;
@@ -277,7 +312,7 @@ figcaption {
 
     .filter{
         width: 22%;
-        margin: auto;
+        margin-top: 10px;
         user-select: none;
         background: #315588;
         position: relative;
@@ -287,6 +322,7 @@ figcaption {
         left: 25%;
     }
     .listPokedex{
+        padding-top: 30px;
         width: 100%;
         display: grid;
         grid-gap: 12px;
@@ -297,7 +333,7 @@ figcaption {
     /* estilo caja pokemon */
 .boxPokedex{
     width: 160px;
-    min-height: 255px;
+    min-height: 328px;
 }
 #modalWindow {
    
