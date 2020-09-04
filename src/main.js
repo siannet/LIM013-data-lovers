@@ -38,6 +38,7 @@ const pokedex = (datos) => {
       <div class="boxPokedex">
         <div class="cardPokedex">
           <div class="card-front">
+          <div class="text front">
             <p>N° ${parseInt(datos.num)}</p>
             <p><strong>${datos.name.toUpperCase()}</strong></p> 
             <img src="${datos.img}">
@@ -53,7 +54,9 @@ const pokedex = (datos) => {
               </table>
             <p><strong>PC: </strong>${Object.values(datos.stats)[3]}</p>
           </div>
+          </div>
           <div class="card-back">
+          <div class="text-back">
             <p>N° ${parseInt(datos.num)}</p>
             <p><strong>${datos.name.toUpperCase()}</strong></p> 
             <span><small>${Object.values(datos.size)[1]}</small> |${imgTipo}| <small>${Object.values(datos.size)[0]}</small></span>
@@ -74,7 +77,8 @@ const pokedex = (datos) => {
             <p><strong> Fast attacks: </strong>${movimiento.join(", ")}</p>
             <p><strong> Special attacks: </strong>${ataque.join(", ")}</p>
             <p><strong>Weaknesses:</strong>${imgDebil}</p>
-            <button onclick="document.getElementById('demo').play()" id= "${datos.num}" type="button">+</button>
+            <button onclick="document.getElementById('demo').play()" id= "${datos.num}" class="plus" type="button">+</button>
+          </div>
           </div>
         </div>
       </div>
@@ -90,7 +94,52 @@ const characteristics = (dataIndex) => {
     <figcaption><small>${tipo}</small></figcaption>
   </figure>`;
   });
-  //let evolution = "";
+ 
+    let evolution=""
+      let nextEvolution=dataIndex.evolution["next-evolution"];
+      let prevEvolution=dataIndex.evolution["prev-evolution"];
+      if(nextEvolution[0]["next-evolution"]!=undefined){
+      evolution+=`
+      <div class="next">
+      <img src="https://www.serebii.net/pokemongo/pokemon/${nextEvolution[0].num}.png"/>
+      <img src="https://www.serebii.net/pokemongo/pokemon/${nextEvolution[0]["next-evolution"][0].num}.png"/>
+      </div>`
+      }else if(nextEvolution!=undefined){
+        evolution+=`
+        <img src="https://www.serebii.net/pokemongo/pokemon/${nextEvolution[0].num}.png"/>
+        `
+      }else if(prevEvolution[0]["prev-evolution"]!=undefined){
+        evolution+=`
+        <div class="prev">
+        <img src="https://www.serebii.net/pokemongo/pokemon/${prevEvolution[0].num}.png"/>
+        <img src="https://www.serebii.net/pokemongo/pokemon/${prevEvolution[0]["prev-evolution"][0].num}.png"/>
+        </div>`
+        }else if(prevEvolution!=undefined){
+          evolution+=`
+          <img src="https://www.serebii.net/pokemongo/pokemon/${prevEvolution[0].num}.png"/>
+          `
+        }else{
+          evolution+="no";
+        }
+  
+  /*let evolution = "";
+  console.log(dataIndex.evolution["next-evolution"][0].name);
+ if(Object.keys(dataIndex.evolution)[1]=="next-evolution"&&Object.keys(dataIndex.evolution)[2]==undefined){
+  evolution +=`<img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["next-evolution"][0].num}.png"/>
+  <img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["next-evolution"][0]["next-evolution"][0].num}.png"/>`
+
+ }else if((Object.keys(dataIndex.evolution)[1]=="next-evolution")&&Object.keys(dataIndex.evolution)[2]=="prev-evolution"){
+  evolution +=`<img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["next-evolution"][0].num}.png"/>
+  <img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["prev-evolution"][0].num}.png"/>`
+
+ }else if(Object.keys(dataIndex.evolution)[1]=="prev-evolution"&&Object.keys(dataIndex.evolution)[2]==undefined){
+  evolution +=`<img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["prev-evolution"][0].num}.png"/>
+  <img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["prev-evolution"][0]["prev-evolution"][0].num}.png"/>`
+ }*/
+  
+  
+  // evolution +=`<img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["next-evolution"][0].num}.png"/>
+   //<img src="https://www.serebii.net/pokemongo/pokemon/${dataIndex.evolution["pre-evolution"][0].num}.png"/>`
   //console.log(dataIndex.evolution["next-evolution"][0].name);
   //console.log(dataIndex.evolution["next-evolution"][0]["next-evolution"][0].name);
   return `
@@ -98,15 +147,21 @@ const characteristics = (dataIndex) => {
       <img class= "pokemonImg" src="${dataIndex.img}">
       <p>${dataIndex.num} <strong>${dataIndex.name.toUpperCase()}</strong></p>
       <p><small><strong>Region: </strong>${Object.values(dataIndex.generation)[1].toUpperCase()}</small></p>  
-      <spam>Weight: ${Object.values(dataIndex.size)[1]} | ${imgTipo} | Height: ${Object.values(dataIndex.size)[0]}</spam>
+      <span>Weight: ${Object.values(dataIndex.size)[1]} | ${imgTipo} | Height: ${Object.values(dataIndex.size)[0]}</span>
       <hr>
-      <p><strong>About: </strong><br>${dataIndex.about}</p>    
+      <p><strong>About: </strong><br>${dataIndex.about}</p> 
+      <p>${evolution}</p>
     </div>
     `
 }
 
 /*----------------Presentación de la Pokedex----------------------*/
 root.innerHTML = data.pokemon.map(pokedex).join(" ");
+
+document.querySelector(".inicio").addEventListener('click',()=>{
+  document.location = "index.html";
+})
+
 
 /*-----------------Ventana modal---------------------------------*/
 root.addEventListener('click', (e) => {
@@ -133,19 +188,18 @@ let changeTypeEvent = () => {
   const tipoOrdenadoPorPC = sortPcOption(dataFiltradaPorTipo, pc.value); //lee el filtro PC cuando se active
   const dataOrdenadaPorPC = sortPcOption(data.pokemon, pc.value);
 
-    porcentage.innerHTML= `
-    <div class="typeQuantity">
-      <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
-    </div>`;
-
   //Muestra la cantidad por tipo seleccionado + los Pokemon
-  
-  root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ");
+porcentage.innerHTML= `
+<div class="typeQuantity">
+  <img class="imgTypeFilter" src="./img/${type.value}.png"/>
+  <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${Object.entries(dataFiltradaPorTipo).length} Pokemon</p>
+</div>`;
+root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ");
 
   //Muestra todos los tipos, es decir la Pokedex inicial u ordena la Pokedex sin ningun tipo seleccionado
-  if (type.value == "all-types" || type.value == "") {
-    root.innerHTML = dataOrdenadaPorPC.map(pokedex).join(" "); //se puso sort para que cambiara por PC
+  if (type.value === "all-types" || type.value == "") {
     porcentage.innerHTML="";
+    root.innerHTML = dataOrdenadaPorPC.map(pokedex).join(" "); //se puso sort para que cambiara por PC
   }
 }
 type.addEventListener('change', changeTypeEvent);
