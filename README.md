@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/Rv3ZXFq/Pokemon-GO.jpg" " alt="Logo">
+[![Pokemon GO](https://i.ibb.co/Rv3ZXFq/Pokemon-GO.jpg)
 # POKÉDEX
 >Proyecto Pokemon GO
 ## Índice
