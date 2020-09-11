@@ -1,75 +1,236 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <div class="container">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!- Barras de navegación -->
+    <!-- Barra de navegación header-->
     <header class="header">
-      <nav>
-        <div class="logo">
-          <img src="img/logito.jpeg" alt="" class="image" >
-        </div>
-        <div id="iHamburger" class="iHamburger">
-          <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="45" height="45"
-            viewBox="0 0 172 172"
-            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" 
-            stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
-            stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" 
-            font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" 
-            fill="none"></path><g><path d="M86,18.8125c-37.10663,0 -67.1875,30.08087 -67.1875,67.1875c0,37.10663 30.08087,67.1875 67.1875,67.1875c37.10663,0 67.1875,-30.08087 67.1875,-67.1875c0,-37.10663 -30.08087,-67.1875 -67.1875,-67.1875z" fill="#e74c3c"></path><path d="M86,157.21875c-39.2375,0 -71.21875,-31.98125 -71.21875,-71.21875c0,-39.2375 31.98125,-71.21875 71.21875,-71.21875c39.2375,0 71.21875,31.98125 71.21875,71.21875c0,39.2375 -31.98125,71.21875 -71.21875,71.21875zM86,22.84375c-34.80312,0 -63.15625,28.35313 -63.15625,63.15625c0,34.80313 28.35313,63.15625 63.15625,63.15625c34.80313,0 63.15625,-28.35312 63.15625,-63.15625c0,-34.80313 -28.35312,-63.15625 -63.15625,-63.15625z" fill="#ffffff"></path><path d="M116.23438,69.875h-60.46875c-2.28438,0 -4.03125,-1.74688 -4.03125,-4.03125c0,-2.28438 1.74687,-4.03125 4.03125,-4.03125h60.46875c2.28437,0 4.03125,1.74687 4.03125,4.03125c0,2.28437 -1.74688,4.03125 -4.03125,4.03125zM116.23438,90.03125h-60.46875c-2.28438,0 -4.03125,-1.74688 -4.03125,-4.03125c0,-2.28437 1.74687,-4.03125 4.03125,-4.03125h60.46875c2.28437,0 4.03125,1.74688 4.03125,4.03125c0,2.28437 -1.74688,4.03125 -4.03125,4.03125z" fill="#ffffff"></path><g fill="#ffffff"><path d="M116.23438,110.1875h-60.46875c-2.28438,0 -4.03125,-1.74688 -4.03125,-4.03125c0,-2.28437 1.74687,-4.03125 4.03125,-4.03125h60.46875c2.28437,0 4.03125,1.74688 4.03125,4.03125c0,2.28437 -1.74688,4.03125 -4.03125,4.03125z"></path></g></g></g></svg></span>
-        </div>
-        <div class="enlaces showCircle" id="enlaces">
-          <a href="#" class="active"><img src="https://img.icons8.com/color/48/000000/pokeball--v1.png"/>inicio</a>
-          <a href="#"><img src="https://img.icons8.com/color/48/000000/crown-pokemon.png"/>play</a>
-          <a href="#"><img src="https://img.icons8.com/color/48/000000/pokebag.png"/>buy</a>
-        </div>
-      </nav>
+      <div class="logo">
+        <img src="img/placaPokedex.png" alt="Logo Pokedex" class="inicio">
+      </div>
+      <!-- Menú Hamburguesa -->
+      <div id="iHamburger" class="iHamburger">
+        <!-- <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"
+            style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#000">
+                <path
+                  d="M10.32,24.08c-1.89469,0 -3.44,1.54531 -3.44,3.44v13.76c0,1.89469 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.54531 3.44,-3.44v-13.76c0,-1.89469 -1.54531,-3.44 -3.44,-3.44zM40.635,27.52c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0zM10.32,58.48c-1.89469,0 -3.44,1.54531 -3.44,3.44v13.76c0,1.89469 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.54531 3.44,-3.44v-13.76c0,-1.89469 -1.54531,-3.44 -3.44,-3.44zM40.635,61.92c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0zM10.32,92.88c-1.89469,0 -3.44,1.53188 -3.44,3.44v13.76c0,1.90813 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.53187 3.44,-3.44v-13.76c0,-1.90812 -1.54531,-3.44 -3.44,-3.44zM40.635,96.32c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0zM10.32,127.28c-1.89469,0 -3.44,1.53188 -3.44,3.44v13.76c0,1.90813 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.53187 3.44,-3.44v-13.76c0,-1.90812 -1.54531,-3.44 -3.44,-3.44zM40.635,130.72c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0z">
+                </path>
+              </g>
+            </g>
+          </svg></span> -->
+      </div>
+      <div class="enlaces" id="enlaces">
+        <ul>
+          <a id="cerrarMenu">
+            <!-- <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M35.83333,21.5c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v100.33333c0,7.91917 6.41417,14.33333 14.33333,14.33333h100.33333c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-100.33333c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM35.83333,35.83333h100.33333v100.33333h-100.33333zM60.27279,50.16667l-10.10612,10.10612l25.72722,25.72721l-25.72722,25.72722l10.10612,10.10612l25.72721,-25.72722l25.72722,25.72722l10.10612,-10.10612l-25.72722,-25.72722l25.72722,-25.72721l-10.10612,-10.10612l-25.72722,25.72722z">
+                    </path>
+                  </g>
+                </g>
+              </svg></li> -->
+          </a>
+          <a href="" class="inicio">
+            <li>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#cccccc">
+                    <path
+                      d="M86,6.88c-43.43058,0 -78.74286,35.10248 -79.10656,78.44813c-0.08306,0.43051 -0.08306,0.87293 0,1.30344c0.34204,43.36427 35.66246,78.48844 79.10656,78.48844c43.43058,0 78.74286,-35.10248 79.10656,-78.44813c0.08306,-0.43051 0.08306,-0.87293 0,-1.30344c-0.34204,-43.36427 -35.66246,-78.48844 -79.10656,-78.48844zM86,13.76c38.78438,0 70.36069,30.46393 72.15265,68.8h-37.92734c-1.73508,-17.34907 -16.42956,-30.96 -34.22531,-30.96c-17.79575,0 -32.49024,13.61093 -34.22531,30.96h-37.92734c1.79197,-38.33607 33.36827,-68.8 72.15266,-68.8zM86,58.48c15.10356,0 27.28325,12.06643 27.49985,27.11687c-0.03375,0.27668 -0.03375,0.55644 0,0.83313c-0.23081,15.03785 -12.40533,27.09 -27.49985,27.09c-15.10356,0 -27.28325,-12.06643 -27.49985,-27.11687c0.03375,-0.27668 0.03375,-0.55644 0,-0.83313c0.23081,-15.03785 12.40533,-27.09 27.49985,-27.09zM86,68.8c-5.44667,0 -9.96949,2.16636 -12.89328,5.45563c-2.92379,3.28926 -4.30672,7.53993 -4.30672,11.74437c0,4.20444 1.38293,8.45511 4.30672,11.74437c2.92379,3.28927 7.44662,5.45563 12.89328,5.45563c5.44667,0 9.96949,-2.16636 12.89328,-5.45563c2.92379,-3.28926 4.30672,-7.53993 4.30672,-11.74437c0,-4.20444 -1.38293,-8.45511 -4.30672,-11.74437c-2.92379,-3.28927 -7.44662,-5.45563 -12.89328,-5.45563zM86,75.68c3.72667,0 6.08384,1.27364 7.74672,3.14437c1.66288,1.87074 2.57328,4.50007 2.57328,7.17563c0,2.67556 -0.91041,5.30489 -2.57328,7.17563c-1.66288,1.87073 -4.02005,3.14437 -7.74672,3.14437c-3.72667,0 -6.08384,-1.27364 -7.74672,-3.14437c-1.66288,-1.87074 -2.57328,-4.50007 -2.57328,-7.17563c0,-2.67556 0.91041,-5.30489 2.57328,-7.17563c1.66288,-1.87073 4.02005,-3.14437 7.74672,-3.14437zM13.84734,89.44h37.92734c1.73508,17.34907 16.42956,30.96 34.22531,30.96c17.79575,0 32.49024,-13.61093 34.22531,-30.96h37.92734c-1.79196,38.33607 -33.36827,68.8 -72.15265,68.8c-38.78438,0 -70.36069,-30.46393 -72.15266,-68.8z">
+                    </path>
+                  </g>
+                </g>
+              </svg> -->
+              HOME</li>
+          </a>
+          <a href="#">
+            <li>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#cccccc">
+                    <path
+                      d="M31.82,13.76c-1.75898,0.00065 -3.23417,1.32803 -3.41984,3.07719l-14.62,137.6c-0.10275,0.96986 0.21096,1.93776 0.86311,2.66294c0.65215,0.72518 1.58145,1.13949 2.55673,1.13987h137.6c0.97529,-0.00038 1.90458,-0.41469 2.55674,-1.13987c0.65215,-0.72518 0.96586,-1.69308 0.86311,-2.66294l-14.62,-137.6c-0.18567,-1.74915 -1.66086,-3.07653 -3.41985,-3.07719zM34.91063,20.64h102.17875l13.88766,130.72h-129.95406zM65.36,30.96c-3.8012,0 -6.88,3.0788 -6.88,6.88c0,2.54197 1.39102,4.73477 3.44,5.92594v4.39406c0,13.23054 10.84946,24.08 24.08,24.08c13.23054,0 24.08,-10.84946 24.08,-24.08v-4.39406c2.04898,-1.19117 3.44,-3.38396 3.44,-5.92594c0,-3.8012 -3.0788,-6.88 -6.88,-6.88c-3.8012,0 -6.88,3.0788 -6.88,6.88c0,2.54197 1.39102,4.73477 3.44,5.92594v4.39406c0,9.48034 -7.71966,17.2 -17.2,17.2c-9.48034,0 -17.2,-7.71966 -17.2,-17.2v-4.39406c2.04898,-1.19117 3.44,-3.38396 3.44,-5.92594c0,-3.8012 -3.0788,-6.88 -6.88,-6.88zM86,79.12c-17.05799,0 -30.96,13.90201 -30.96,30.96c0,17.05799 13.90201,30.96 30.96,30.96c17.05799,0 30.96,-13.90201 30.96,-30.96c0,-17.05799 -13.90201,-30.96 -30.96,-30.96zM86,86c12.16751,0 22.14684,8.94655 23.81125,20.64h-10.54844c-1.54758,-5.9023 -6.89778,-10.32 -13.26281,-10.32c-6.36504,0 -11.71523,4.4177 -13.26281,10.32h-10.54844c1.66441,-11.69345 11.64374,-20.64 23.81125,-20.64zM86,103.2c3.84046,0 6.88,3.03954 6.88,6.88c0,3.84046 -3.03954,6.88 -6.88,6.88c-3.84046,0 -6.88,-3.03954 -6.88,-6.88c0,-3.84046 3.03954,-6.88 6.88,-6.88zM62.18875,113.52h10.54844c1.54758,5.9023 6.89778,10.32 13.26281,10.32c6.36504,0 11.71523,-4.4177 13.26281,-10.32h10.54844c-1.66441,11.69345 -11.64374,20.64 -23.81125,20.64c-12.16751,0 -22.14684,-8.94655 -23.81125,-20.64z">
+                    </path>
+                  </g>
+                </g>
+              </svg>  -->
+              STORE</li>
+          </a>
+          <a href="">
+            <li>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#cccccc">
+                    <path
+                      d="M48.73781,6.88c-5.99171,0 -10.89781,4.96317 -10.89781,10.95828v9.10391c-0.0614,0.37149 -0.0614,0.75054 0,1.12203v112.39797c-0.0614,0.37149 -0.0614,0.75054 0,1.12203v12.5775c0,5.99701 4.9061,10.95828 10.89781,10.95828h74.53109c5.98986,0 10.8911,-4.96317 10.8911,-10.95828v-12.5439c0.0614,-0.37149 0.0614,-0.75054 0,-1.12203v-112.39797c0.0614,-0.37149 0.0614,-0.75054 0,-1.12203v-9.1375c0,-5.99511 -4.9061,-10.95828 -10.89781,-10.95828zM48.73781,13.76h74.52437c2.20925,0 4.01781,1.80363 4.01781,4.07828v6.24172h-82.56v-6.24172c0,-2.27465 1.80856,-4.07828 4.01781,-4.07828zM44.72,30.96h82.56v106.64h-82.56zM86,58.48c-15.15813,0 -27.52,12.36187 -27.52,27.52c0,15.15813 12.36187,27.52 27.52,27.52c15.15813,0 27.52,-12.36187 27.52,-27.52c0,-15.15813 -12.36187,-27.52 -27.52,-27.52zM86,65.36c10.26447,0 18.70053,7.41444 20.33094,17.2h-7.06812c-1.54758,-5.9023 -6.89778,-10.32 -13.26281,-10.32c-6.36504,0 -11.71523,4.4177 -13.26281,10.32h-7.06812c1.63041,-9.78556 10.06647,-17.2 20.33094,-17.2zM86,79.12c3.84046,0 6.88,3.03954 6.88,6.88c0,3.84046 -3.03954,6.88 -6.88,6.88c-3.84046,0 -6.88,-3.03954 -6.88,-6.88c0,-3.84046 3.03954,-6.88 6.88,-6.88zM65.66906,89.44h7.06812c1.54758,5.9023 6.89778,10.32 13.26281,10.32c6.36504,0 11.71523,-4.4177 13.26281,-10.32h7.06812c-1.63041,9.78556 -10.06647,17.2 -20.33094,17.2c-10.26447,0 -18.70053,-7.41444 -20.33094,-17.2zM44.72,144.48h82.56v9.68172c0,2.27465 -1.80687,4.07828 -4.0111,4.07828h-74.53109c-2.20925,0 -4.01781,-1.79865 -4.01781,-4.07828zM75.68,147.92c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058h20.64c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058z">
+                    </path>
+                  </g>
+                </g>
+              </svg>  -->
+              DOWNLOAD</li>
+          </a>
+        </ul>
+      </div>
     </header>
-    <input type="text" class="search" placeholder="   pokemon name">
-    <div class="filter-wrap">
-     <select  class="filter type">
-       <option value="" disabled selected class="name">TYPE</option>
-       <option value="all-types" default>ALL TYPES</option>
-       <option value="normal" data-icon= "./img/normal.png">Normal</option>
-       <option value="fighting"><p>Fighting</p></option>
-       <option value="flying"><p>Flying</p></option>
-       <option value="poison"><p>Poison</p></option>
-       <option value="ground"><p>Ground</p></option>
-       <option value="rock"><p>Rock</p></option>
-       <option value="bug"><p>Bug</p></option>
-       <option value="ghost"><p>Ghost</p></option>
-       <option value="steel"><p>Steel</p></option>
-       <option value="fire"><p>Fire</p></option>
-       <option value="water"><p>Water</p></option>
-       <option value="grass"><p>Grass</p></option>
-       <option value="electric"><p>Electric</p></option>
-       <option value="psychic"><p>Psychic</p></option>
-       <option value="ice"><p>Ice</p></option>
-       <option value="dragon"><p>Dragon</p></option>
-       <option value="dark"><p>Dark</p> </option>
-       <option value="fairy"><p>Fairy</p></option>
-     </select> 
-     <select class="filter pc">
-       <option value="" disabled selected>PC</option> 
-       <option value="HIGHER">HIGHER</option>
-       <option value="LESS">LESS</option>
-     </select>
+    <!-- Barra de navegación lateral  -->
+    <div class="vertical-bar">
+      <div class="search-icon">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="26" padding="10px"
+          viewBox="0 0 172 172" style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g fill="#ffffff">
+              <path
+                d="M10.32,24.08c-1.89469,0 -3.44,1.54531 -3.44,3.44v13.76c0,1.89469 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.54531 3.44,-3.44v-13.76c0,-1.89469 -1.54531,-3.44 -3.44,-3.44zM40.635,27.52c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0zM10.32,58.48c-1.89469,0 -3.44,1.54531 -3.44,3.44v13.76c0,1.89469 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.54531 3.44,-3.44v-13.76c0,-1.89469 -1.54531,-3.44 -3.44,-3.44zM40.635,61.92c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0zM10.32,92.88c-1.89469,0 -3.44,1.53188 -3.44,3.44v13.76c0,1.90813 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.53187 3.44,-3.44v-13.76c0,-1.90812 -1.54531,-3.44 -3.44,-3.44zM40.635,96.32c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0zM10.32,127.28c-1.89469,0 -3.44,1.53188 -3.44,3.44v13.76c0,1.90813 1.54531,3.44 3.44,3.44h13.76c1.89469,0 3.44,-1.53187 3.44,-3.44v-13.76c0,-1.90812 -1.54531,-3.44 -3.44,-3.44zM40.635,130.72c-3.80281,0.17469 -6.73219,3.39969 -6.5575,7.2025c0.17469,3.80281 3.39969,6.73219 7.2025,6.5575h116.96c2.48594,0.04031 4.78375,-1.26312 6.03344,-3.41312c1.26313,-2.13656 1.26313,-4.79719 0,-6.93375c-1.24969,-2.15 -3.5475,-3.45344 -6.03344,-3.41313h-116.96c-0.215,-0.01344 -0.43,-0.01344 -0.645,0z">
+              </path>
+            </g>
+          </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="26" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g fill="#ffffff">
+              <path
+                d="M64.5,14.33333c-27.6214,0 -50.16667,22.54527 -50.16667,50.16667c0,27.6214 22.54527,50.16667 50.16667,50.16667c12.52732,0 23.97256,-4.67249 32.7819,-12.31771l3.05143,3.05143v9.26628l43,43l14.33333,-14.33333l-43,-43h-9.26628l-3.05143,-3.05143c7.64521,-8.80934 12.31771,-20.25458 12.31771,-32.7819c0,-27.6214 -22.54527,-50.16667 -50.16667,-50.16667zM64.5,28.66667c19.87509,0 35.83333,15.95824 35.83333,35.83333c0,19.87509 -15.95825,35.83333 -35.83333,35.83333c-19.87509,0 -35.83333,-15.95825 -35.83333,-35.83333c0,-19.87509 15.95824,-35.83333 35.83333,-35.83333z">
+              </path>
+            </g>
+          </g>
+        </svg> -->
+      </div>
     </div>
-     <div id="porcentage"></div>
-     <div id="root" class="listPokedex"></div>
-    <section id="modalWindow" class="modalWindow">
-      <button type="button" id="close">X</button>
-      <div id="moreInformation"></div> 
-    </section>
-    <footer class="footer">
-      <p class="copyW">&copy; melissa/siannet</p>
-    </footer>
-   <audio id="demo" src="./img/pikachu.mp3"></audio>
-  </body> 
-  <script src="main.js" type="module"></script>
+
+    <!- Página 1 - Elige tu Team -->
+      <section id="pag1">
+        <div class="fondo1">
+          <audio src="./img/Team.mp3" auto="autoplay"></audio>
+          <!---- Social media -->
+          <div class="social-icon">
+            <img src="https://img.icons8.com/fluent/32/000000/facebook-new.png" />
+            <img src="https://img.icons8.com/fluent/32/000000/instagram-new.png" />
+            <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+            <img src="https://img.icons8.com/fluent/30/000000/youtube-play.png" />
+          </div>
+          <!-- Team cards -->
+          <div id="cartillas">
+            <div class="teamValor optionTeam">
+              <img src="img/oficialValor.jpg" id="valor" alt="Team Valor">
+              <h3>V A L O R</h3><br>
+              <p class="contentTeam">"Our fires will never die"</p>
+            </div>
+            <div class="teamInstinct optionTeam">
+              <img src="img/oficialInstinct1.jpg" id="instinct" alt="Team Instinct">
+              <h3>I N S T I N C T</h3><br>
+              <p class="contentTeam">"There is no shelter from the storm"</p>
+            </div>
+            <div class="teamMystic optionTeam">
+              <img src="img/oficialMystic1.jpg" id="mystic" alt="Team Mystic">
+              <h3>M Y S T I C</h3><br>
+              <p class="contentTeam">"The power of knowledge"</p>
+            </div>
+          </div>
+          <!-- Bannner de título orientando al usuario -->
+          <div class="banner-title">
+            <h1>CHOOSE YOUR<span> TEAM</span> FIND YOUR <span>POKEMON</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <!- Página2 - Pokédex -->
+
+        <section id="pag2">
+          <!-- Banner de tema seleccionado -->
+          <div class="banner-team">
+            <div class="tituloTeam">
+              <h1> VALOR</h1>
+              <p>"OUR FIRES WILL NEVER DIE"</p>
+            </div>
+          </div>
+          <!-- Filtros de búsqueda, tipo y PC -->
+          <div class="cajaBusqueda">
+            <input type="text" class="search" placeholder="Pokename or number"></div>
+          <div class="filter-container">
+            <select class="filter type">
+              <option value="" disabled selected class="name">TYPE</option>
+              <option value="all-types" default>ALL TYPES</option>
+              <option value="normal">Normal</option>
+              <option value="fighting">Fighting</option>
+              <option value="flying">Flying</option>
+              <option value="poison">Poison</option>
+              <option value="ground">Ground</option>
+              <option value="rock">Rock</option>
+              <option value="bug">Bug</option>
+              <option value="ghost">Ghost</option>
+              <option value="steel">Steel</option>
+              <option value="fire">Fire</option>
+              <option value="water">Water</option>
+              <option value="grass">Grass</option>
+              <option value="electric">Electric</option>
+              <option value="psychic">Psychic</option>
+              <option value="ice">Ice</option>
+              <option value="dragon">Dragon</option>
+              <option value="dark">Dark</option>
+              <option value="fairy">Fairy</option>
+            </select>
+            <select class="filter pc">
+              <option value="" disabled selected>PC</option>
+              <option value="HIGHER">HIGHER</option>
+              <option value="LESS">LESS</option>
+            </select>
+          </div>
+
+          <!-- Presentación de la Pokedex -->
+          <div id="calculate"></div>
+          <div id="root" class="listPokedex"></div>
+          <section id="modalWindow" class="modalWindow hide">
+            <div id="moreInformation" class="moreInformation"></div>
+          </section>
+          <audio id="audio" src="./img/pikachu.mp3"></audio>
+        </section> <!-- cierre de pag2 -->
+        <!-- <footer>
+    <p class="copyW">&copy; melissa/siannet</p>
+  </footer> -->
+</body>
+<script src="main.js" type="module"></script>
+
 </html>
