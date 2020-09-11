@@ -82,8 +82,8 @@ body {
 }
 
 /* iconos laterales*/
-.search-icon svg {
-  padding: 10px;
+.search-icon {
+  padding: 8px;
   cursor: pointer;
 }
 
@@ -144,7 +144,7 @@ body {
   position: absolute;
   width: 260px;
   height: 440px;
-  margin-top: 75px;
+  margin-top: 70px;
   transition: .6s;
   transform: rotatex(75deg) translatey(-200px) translatez(-100px);
   box-shadow: 0px 20px 60px rgba(59, 59, 59, 0.24);
@@ -387,8 +387,8 @@ figure:hover>figcaption {
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.6);
   border-radius: 20px;
   text-align: center;
-  width: 420px;
-  max-height: 95%;
+  width: 330px;
+  max-height: 85%;
   padding-top: 75px;
   overflow-y: scroll;
 }
@@ -457,12 +457,13 @@ div>.pokemonSelected {
 
 /* boton cerrar modal */
 .close {
-  left: 45%;
-  top: -50px;
-  position: relative;
-  width: 25px;
-  border-radius: 50%;
-  cursor: pointer;
+    left: 42%;
+    top: -59px;
+    position: relative;
+    width: 30px;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .hamburger-container {
@@ -489,6 +490,7 @@ div>.pokemonSelected {
 .pikachu-search img{
     width: 350px;
 }
+
 @media screen and (max-width: 768px) {
   .social-icon {
     display: none;
@@ -527,11 +529,14 @@ div>.pokemonSelected {
   }
 
   #cerrarMenu {
-    display: block;
+    display: none;
   }
 
 .pikachu-search img{
     width: 300px;
+}
+.moreInformation{
+  max-height: 80%;
 }
 }
 
@@ -606,6 +611,19 @@ div>.pokemonSelected {
 
   .pikachu-search img{
       width: 200px;
+  }
+
+  .boxPokedex {
+    max-width: 260px;
+    min-height: 375px;
+    display: flex;
+  }
+  .moreInformation{
+    width: 330px;
+    max-height: 80%;
+  }
+  #cerrarMenu {
+    display: block;
   }
   
 }
