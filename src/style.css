@@ -395,7 +395,7 @@ figure:hover>figcaption {
 
 /*efecto de scroll*/
 .moreInformation::-webkit-scrollbar {
-  width: 7px;
+  width: 12px;
 }
 
 .moreInformation::-webkit-scrollbar-thumb {
@@ -458,8 +458,11 @@ div>.pokemonSelected {
 /* boton cerrar modal */
 .close {
   left: 45%;
-  top: -70px;
+  top: -50px;
   position: relative;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .hamburger-container {
@@ -512,10 +515,6 @@ div>.pokemonSelected {
   }
 
   .vertical-bar {
-    display: none;
-  }
-
-  .social-icon {
     display: none;
   }
 
@@ -594,7 +593,7 @@ div>.pokemonSelected {
   .enlaces {
     display: none;
   }
-
+/*linea que separa el header de la pokedex*/
   .header {
     box-shadow: 0 4px 5px rgba(39, 39, 39, 0.6)
   }

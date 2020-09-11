@@ -1,22 +1,22 @@
 import { filterTypeOption, sortPcOption, filterInputSearch, statistics } from './data.js';
 import data from './data/pokemon/pokemon.js';
-//console.log(filterTypeOption(data.pokemon, "steel"));
+
 /*-----------PRESENTACIÓN DE LA PAGINA DE INICIO Y DE LA POKEDEX----------*/
 const pag1 = document.getElementById("pag1");
 const pag2 = document.getElementById("pag2");
 
 //Elección de Team valor
-document.getElementById("valor").addEventListener("click", function () {
+document.getElementById("valor").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
 })
 //Elección de Team Instinct
-document.getElementById("instinct").addEventListener("click", function () {
+document.getElementById("instinct").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
 })
 //Elección de Team Mystic
-document.getElementById("mystic").addEventListener("click", function () {
+document.getElementById("mystic").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
 })
@@ -61,11 +61,11 @@ const pokedex = (datos) => {
             <img src="${datos.img}">
             <table style="margin: 0 auto;">
               <tr>
-              <th>Type: </th>
+                <th>Type: </th>
                 <th>${imgTipo}</th>
               </tr>
               <tr>
-              <td></td>
+                <td></td>
                 <td><small>${datos.type.join(" / ")}</small></td>
               </tr>
               </table>
@@ -445,7 +445,7 @@ search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de poke
 
   root.innerHTML = "";
   calculate.innerHTML="";
-
+console.log(searchFiltered);
   if (searchFiltered.length === 0) {   //Si el usuario ingresa mal el nombre del Pokemon
     root.innerHTML = `
         <div class="pikachu-search">
