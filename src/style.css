@@ -24,6 +24,7 @@ body {
   width: 180px;
   display: flex;
   padding: 4px 0px 5px 0px;
+  cursor: pointer;
 }
 
 /* Enlaces: Home, Store, etc*/
@@ -161,6 +162,7 @@ body {
 .optionTeam img {
   width: 100%;
   height: 350px;
+  cursor: pointer;
 }
 
 /* titulos en las cartillas */
@@ -330,13 +332,13 @@ figure:hover>figcaption {
 
 /* carta de la caja trasera */
 .card-back {
-  background-color: #b92025;
+  background-color:#2980b9;
   color: white;
   transform: rotateY(180deg);
 }
 
 .text-back ul li {
-  text-align: left;
+    text-align: left;
 }
 
 /* edicion texto back */
@@ -353,6 +355,7 @@ figure:hover>figcaption {
   outline: 0;
   font-size: 16px;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 /**************ventana modal ******************/
@@ -392,7 +395,7 @@ figure:hover>figcaption {
 
 /*efecto de scroll*/
 .moreInformation::-webkit-scrollbar {
-  width: 7px;
+  width: 12px;
 }
 
 .moreInformation::-webkit-scrollbar-thumb {
@@ -455,8 +458,11 @@ div>.pokemonSelected {
 /* boton cerrar modal */
 .close {
   left: 45%;
-  top: -70px;
+  top: -50px;
   position: relative;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .hamburger-container {
@@ -509,10 +515,6 @@ div>.pokemonSelected {
   }
 
   .vertical-bar {
-    display: none;
-  }
-
-  .social-icon {
     display: none;
   }
 
@@ -591,7 +593,7 @@ div>.pokemonSelected {
   .enlaces {
     display: none;
   }
-
+/*linea que separa el header de la pokedex*/
   .header {
     box-shadow: 0 4px 5px rgba(39, 39, 39, 0.6)
   }

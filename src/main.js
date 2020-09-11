@@ -6,17 +6,17 @@ const pag1 = document.getElementById("pag1");
 const pag2 = document.getElementById("pag2");
 
 //Elección de Team valor
-document.getElementById("valor").addEventListener("click", function () {
+document.getElementById("valor").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
 })
 //Elección de Team Instinct
-document.getElementById("instinct").addEventListener("click", function () {
+document.getElementById("instinct").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
 })
 //Elección de Team Mystic
-document.getElementById("mystic").addEventListener("click", function () {
+document.getElementById("mystic").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
 })
@@ -61,11 +61,11 @@ const pokedex = (datos) => {
             <img src="${datos.img}">
             <table style="margin: 0 auto;">
               <tr>
-              <th>Type: </th>
+                <th>Type: </th>
                 <th>${imgTipo}</th>
               </tr>
               <tr>
-              <td></td>
+                <td></td>
                 <td><small>${datos.type.join(" / ")}</small></td>
               </tr>
               </table>
@@ -412,7 +412,7 @@ window.addEventListener("click", function (e) {
 /*---------------------FILTRADO POR TIPO-------------------------------*/
 const changeTypeEvent = () => {
   const dataFiltradaPorTipo = filterTypeOption(data.pokemon, type.value);
-  const tipoOrdenadoPorPC = sortPcOption(dataFiltradaPorTipo, pc.value); //lee el filtro PC cuando se active
+  sortPcOption(dataFiltradaPorTipo, pc.value); //lee el filtro PC cuando se active
   const dataOrdenadaPorPC = sortPcOption(data.pokemon, pc.value);
 
   //Muestra la cantidad por tipo seleccionado + los Pokemon
@@ -445,7 +445,7 @@ search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de poke
 
   root.innerHTML = "";
   calculate.innerHTML="";
-
+console.log(searchFiltered);
   if (searchFiltered.length === 0) {   //Si el usuario ingresa mal el nombre del Pokemon
     root.innerHTML = `
         <div class="pikachu-search">

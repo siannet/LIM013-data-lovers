@@ -1,8 +1,10 @@
-# Data Lovers
-Poryecto Pokemon GO
+[![Pokemon GO](https://i.ibb.co/Rv3ZXFq/Pokemon-GO.jpg)](https://pokemongolive.com/es/)
+
+# POKÉDEX
+>Proyecto Pokemon GO
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
+* [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
@@ -14,8 +16,9 @@ Poryecto Pokemon GO
 
 ***
 
-## 1. Preámbulo
+## 1. 🧐Resumen del proyecto
 
+El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, 
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 millones de terabytes de datos, una cifra sin

@@ -4,10 +4,11 @@ export const filterTypeOption = (data, nameType) => {
     return objPokemon.type.includes(nameType);
   });
 };
+
 /*-------------Estadística de tipo--------------------------*/
 export const statistics = (data, nameType) => {
   let quantity = filterTypeOption(data, nameType).length;
-  let porcentage = ((quantity / data.length) * 100).toFixed(2);
+  let porcentage = ((quantity / data.length) * 100).toFixed(1);
   return [quantity, porcentage];
 };
 
