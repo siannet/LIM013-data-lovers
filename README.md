@@ -26,9 +26,9 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
 
 ## 2. Definición del producto
 
-La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciado por el hecho de ser un juego que ha tenido aceptación en usuarios de rangos de edades muy variadas, asimismo el juego se basa en la versión anime que hasta ahora sigue vigente.
+La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciado por el hecho de ser un juego que ha tenido aceptación en usuarios de rangos de edades muy variadas, asimismo el juego se basa en el anime que hasta ahora sigue vigente.
 
-Debido a ello, 
+Debido a ello, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad de 10 a 30 años, elaboramos encuestas para saber sus necesidades y entrevistas
 
 ## 3. Historias de usuario
 
