@@ -311,12 +311,6 @@ figure:hover>figcaption {
 
 #calculate {
   text-align: center;
-  position: sticky;
-  top: 40px;
-  background-color: white;
-  z-index: 25;
-  width: 85%;
-  margin: auto;
 }
 
 /* carta frontal/efecto flip-card */
