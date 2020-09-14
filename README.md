@@ -3,6 +3,7 @@
   </p>
 
 # POKÉDEX
+### Esteffany Arango & Siannet Flores
 >Proyecto Pokemon GO
 ## Índice
 
@@ -28,7 +29,9 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
 
 La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciado por el hecho de ser un juego que ha tenido aceptación en usuarios de rangos de edades muy variadas, asimismo el juego se basa en el anime que hasta ahora sigue vigente.
 
-Debido a ello, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad de 10 a 30 años, elaboramos encuestas para saber sus necesidades y entrevistas
+Debido a ello, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad escogido de 10 a 30 años. Elaboramos encuestas para saber que datos priorizan en el juego y entrevistas para analizar sus necesidades e iterar nuestros prototipos. 
+
+De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer)
 
 ## 3. Historias de usuario
 
@@ -49,7 +52,7 @@ Debido a ello, como criterio de elección de usuarios, procuramos que sean de ed
 <p align="center">
 <img width="40%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial" HSPACE="50" VSPACE="50">            
 <img width="30%" src="https://i.ibb.co/vvT9P7t/Prototipo-de-baja-final.jpg" alt="Prototipo-de-baja-final">
-<h4 align="center">Primer y segundo prototipo de baja fidelidad</h4>
+<h4 align="center">Primer y segundo prototipo de baja fidelidad (Balsamiq)</h4>
 </p>
 
 <p align="center">
