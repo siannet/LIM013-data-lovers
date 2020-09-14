@@ -1,5 +1,5 @@
 <p align="center">
-<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/"><img width="80%" src="https://i.ibb.co/1K0YKyh/Pokedex.jpg" alt="Pokedex" border="0">
+<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="80%" src="https://i.ibb.co/1K0YKyh/Pokedex.jpg" alt="Pokedex" border="0">
   </p>
 
 # POKÉDEX
@@ -20,9 +20,35 @@
 
 ## 1. 🧐Resumen del proyecto
 
-El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde no solo podrás visualizar los Pokemon, sino aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica. 
+El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde podrá aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica. 
 
 El proyecto se inspiró en el juego **_Pokemon GO_**
+
+<p align="center">
+<img width="30%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial">
+ <h4 align="center">Primer prototipo de baja fidelidad</h4>
+</p>
+
+<p align="center">
+<img width="30%" src="https://i.ibb.co/vvT9P7t/Prototipo-de-baja-final.jpg" alt="Prototipo-de-baja-final">
+</p>
+
+<p align="center">
+<img width="30%" src="https://i.ibb.co/276kkH6/Prototipo-de-alta.jpg" alt="Prototipo-de-alta" border="0">
+</p>
+
+<p align="center">
+<img src="https://i.ibb.co/jRQr7h8/HU-1-3.jpg" alt="HU-1-3" border="0">
+</p>
+
+<p align="center">
+<img src="https://i.ibb.co/2hctQyS/HU-4-6.jpg" alt="HU-4-6" border="0">
+</p>
+
+<p align="center">
+<img width= 80% src="https://i.ibb.co/qj5X8zK/HU-7-10.jpg" alt="HU-7-10" border="0">
+</p>
+
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 millones de terabytes de datos, una cifra sin
