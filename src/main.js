@@ -4,21 +4,34 @@ import data from './data/pokemon/pokemon.js';
 /*-----------PRESENTACIÓN DE LA PAGINA DE INICIO Y DE LA POKEDEX----------*/
 const pag1 = document.getElementById("pag1");
 const pag2 = document.getElementById("pag2");
+const titulo= document.querySelector(".tituloTeam");
 
 //Elección de Team valor
 document.getElementById("valor").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
+  titulo.innerHTML=`
+  <h1> VALOR</h1>
+  <p>"OUR FIRES WILL NEVER DIE"</p>
+  `
 })
 //Elección de Team Instinct
 document.getElementById("instinct").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
+  titulo.innerHTML=`
+  <h1> INSTINCT</h1>
+  <p>"THERE IS NO SHELTER FROM THE STORM"</p>
+  `
 })
 //Elección de Team Mystic
 document.getElementById("mystic").addEventListener("click", () => {
   pag1.style.display = "none";
   pag2.style.display = "block";
+  titulo.innerHTML=`
+  <h1> MYSTIC</h1>
+  <p>"THE POWER OF KNOWLEDGE"</p>
+  `
 })
 
 /*--------------FUNCIÓN QUE CONTIENE LOS DATOS DE LAS CARTILLAS---------------------*/
@@ -66,7 +79,7 @@ const pokedex = (datos) => {
               </tr>
               <tr>
                 <td></td>
-                <td><small>${datos.type.join(" / ")}</small></td>
+                <td>${datos.type.join(" / ")}</td>
               </tr>
               </table>
             <p><strong>PC: </strong>${Object.values(datos.stats)[3]}</p>
@@ -131,7 +144,6 @@ const information = (dataIndex) => {
               <p>N° ${evolution1.num}</p>
               <p><strong><em>Unevolved</em></strong></p>
               <p>Candy cost: ${evolution1["candy-cost"]}</p>
-              <p>${dataIndex.evolution.candy}</p>
             </div> 
             <div class="evolution-info">
               <img class="evolution2 pokemonSelected" src="${dataIndex.img}"/>
@@ -163,7 +175,6 @@ const information = (dataIndex) => {
                 <p>N° ${evolution3.num}</p>
                 <p><strong><em>Second evolution</em></strong></p>
                 <p>Candy required: ${evolution3["candy-cost"]}</p>
-                <p>${dataIndex.evolution.candy}</p>
               </div>
             </div>
             `
@@ -192,7 +203,6 @@ const information = (dataIndex) => {
               <p>N° ${evolution0.num}</p>
               <p><strong><em>Unevolved</em></strong></p>
               <p>Candy cost: ${evolution0["candy-cost"]}</p>
-              <p>${dataIndex.evolution.candy}</p>
             </div>
             <div class="evolution-info">
               <img class="evolution2" src="https://www.serebii.net/pokemongo/pokemon/${evolution1.num}.png"/>
@@ -200,7 +210,6 @@ const information = (dataIndex) => {
               <p>N° ${evolution1.num}</p>
               <p><strong><em>First evolution</em></strong></p>
               <p>Candy cost: ${evolution1["candy-cost"]}</p>
-              <p>${dataIndex.evolution.candy}</p>
             </div>
           </div>
             `
@@ -249,7 +258,6 @@ const information = (dataIndex) => {
               <p>N° ${evolution1.num}</p>
               <p><strong><em>Unevolved</em></strong></p>
               <p>Candy cost: ${evolution1["candy-cost"]}</p>
-              <p>${dataIndex.evolution.candy}</p>
             </div>
           </div>
           `
@@ -302,7 +310,6 @@ const information = (dataIndex) => {
             <p>N° ${evolution2.num}</p>
             <p><strong><em>First evolution</em></strong></p>
             <p>Candy required: ${evolution2["candy-cost"]}</p>
-            <p>${dataIndex.evolution.candy}</p>
           </div>
         </div>
         `
@@ -329,7 +336,6 @@ const information = (dataIndex) => {
               <p>N° ${evolution3.num}</p>
               <p><strong><em>Second evolution</em></strong></p>
               <p>Candy required: ${evolution3["candy-cost"]}</p>
-              <p>${dataIndex.evolution.candy}</p>
             </div>
           </div>
           `
@@ -437,15 +443,15 @@ type.addEventListener('change', changeTypeEvent);
 pc.addEventListener('change', () => {
   changeTypeEvent(); // permite que trabajen en conjunto
 });
-
+let search1=document.querySelector(".search1");
 /*----------------FUNCION DE BUSQUEDA DE POKEMON----------------------*/
-search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de pokedex y autocompletado
+search1,search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de pokedex y autocompletado
   const searchFiltered = filterInputSearch(data.pokemon, search.value);
   const dataFiltradaPorTipo = filterTypeOption(searchFiltered, type.value);
 
   root.innerHTML = "";
   calculate.innerHTML="";
-console.log(searchFiltered);
+
   if (searchFiltered.length === 0) {   //Si el usuario ingresa mal el nombre del Pokemon
     root.innerHTML = `
         <div class="pikachu-search">
@@ -460,10 +466,10 @@ console.log(searchFiltered);
   } else {
     root.innerHTML = searchFiltered.map(pokedex).join(" ");   //búsqueda inicial
   }
-  //console.log(searchFiltered);
+
 });
 
-/*------------REINICIO DE LA PÁGINA WEB DANDO CLICK EN EL LOGO Y HOME---------------------- */
+/*------------REINICIO DE LA PÁGINA WEB DANDO CLICK EN EL LOGO---------------------- */
 document.querySelector(".inicio").addEventListener('click', () => {
   document.location = "index.html";
 })
