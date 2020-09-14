@@ -87,7 +87,6 @@ body {
   cursor: pointer;
 }
 
-
 /******************Página 1******************************/
 /* contenedor del texto */
 .banner-title {
@@ -243,6 +242,9 @@ body {
 
 .filter-container {
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 25;
 }
 .imgTypeFilter{
     height: 70px;
@@ -309,6 +311,12 @@ figure:hover>figcaption {
 
 #calculate {
   text-align: center;
+  position: sticky;
+  top: 40px;
+  background-color: white;
+  z-index: 25;
+  width: 85%;
+  margin: auto;
 }
 
 /* carta frontal/efecto flip-card */
@@ -387,7 +395,7 @@ figure:hover>figcaption {
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.6);
   border-radius: 20px;
   text-align: center;
-  width: 330px;
+  width: 425px;
   max-height: 85%;
   padding-top: 75px;
   overflow-y: scroll;
@@ -490,6 +498,14 @@ div>.pokemonSelected {
 .pikachu-search img{
     width: 350px;
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
 
 @media screen and (max-width: 768px) {
   .social-icon {
@@ -537,6 +553,11 @@ div>.pokemonSelected {
 }
 .moreInformation{
   max-height: 80%;
+  width: 330px;
+}
+/*efecto de scroll*/
+.moreInformation::-webkit-scrollbar {
+  width: 7px;
 }
 }
 
@@ -619,8 +640,12 @@ div>.pokemonSelected {
     display: flex;
   }
   .moreInformation{
-    width: 330px;
     max-height: 80%;
+    width: 330px;
+  }
+  /*efecto de scroll*/
+  .moreInformation::-webkit-scrollbar {
+    width: 7px;
   }
   #cerrarMenu {
     display: block;
