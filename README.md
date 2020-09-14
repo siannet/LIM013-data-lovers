@@ -56,6 +56,16 @@ En un principio, basándonos en nuestras investigaciones previas acerca del jueg
 <h4 align="center">Primer y segundo prototipo de baja fidelidad (Balsamiq)</h4>
 </p>
 
+Teniendo en cuenta los prototipos de baja fidelidad, ideamos nuestra página con las siguientes consideraciones:
+
+* Se muestra la sección de búsqueda por nombre o número de pokedex, y dos pestañas desplegables para poder filtrar por Tipo y PC.
+* Se muestran las tarjetas de los 251 pokemon, con características básicas (*número de Pokedex, nombre, imagen del pokemon, tipo y PC*), no queríamos saturar al usuario con tanta información a primera vista.
+* Efecto *flip card* que permitirá voltear las tarjetas cuando se pase el mouse (desktop) o con un click (celular), donde se visualizarán las características relevantes para nuestros usuarios (*estadística básica, movimientos rápidos, ataques espeaciales y debilidades de cada pokemon*), además de un botón de "*View more*" por si quieren ver más detalles del pokemon seleccionado.
+* El botón de "*View more*", desplegará una ventana modal que muestran las características detalladas de los Pokemon (*de qué trata el pokemon seleccionado, si presenta evoluciones y cuántos caramelos requiere para cada evolución*)
+
+#### Versión desktop
+* Se muestra una pantalla de inicio, donde el jugador podrá elegir un Team acorde al juego
+
 <p align="center">
 <img width="30%" src="https://i.ibb.co/276kkH6/Prototipo-de-alta.jpg" alt="Prototipo-de-alta">
   <h4 align="center">Prototipo de alta fidelidad en Figma, versión celular y desktop</h4>
