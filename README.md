@@ -26,6 +26,10 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
 
 ## 2. Definición del producto
 
+La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciado por el hecho de ser un juego que ha tenido aceptación en usuarios de rangos de edades muy variadas, asimismo el juego se basa en la versión anime que hasta ahora sigue vigente.
+
+Debido a ello, 
+
 ## 3. Historias de usuario
 
 <p align="center">
@@ -43,7 +47,7 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
 ## 4. Diseño de Interfaz de Usuario
 
 <p align="center">
-<img width="40%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial">            
+<img width="40%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial" HSPACE="50" VSPACE="50">            
 <img width="30%" src="https://i.ibb.co/vvT9P7t/Prototipo-de-baja-final.jpg" alt="Prototipo-de-baja-final">
 <h4 align="center">Primer y segundo prototipo de baja fidelidad</h4>
 </p>
