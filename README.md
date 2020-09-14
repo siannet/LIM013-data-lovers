@@ -25,13 +25,13 @@ El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el us
 
 El proyecto se inspiró en el juego **_Pokemon GO_**
 
-## 2. Definición del producto
+## 2. 👩‍💻Definición del producto
 
 La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciado por el hecho de ser un juego que ha tenido aceptación en usuarios de rangos de edades muy variadas, asimismo el juego se basa en el anime que hasta ahora sigue vigente.
 
 Debido a ello, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad escogido de 10 a 30 años. Elaboramos encuestas para saber que datos priorizan en el juego y entrevistas para analizar sus necesidades e iterar nuestros prototipos. 
 
-De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer)
+De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer), los usuarios querían datos puntuales para armar sus estrategias. Es por ello, que nuestra página web se ajusta a los requerimientos del usuario y lo ayuda de una forma intuitiva y eficaz a la lectura de datos.
 
 ## 3. Historias de usuario
 
