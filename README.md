@@ -63,8 +63,12 @@ Teniendo en cuenta los prototipos de baja fidelidad, ideamos nuestra página con
 * Efecto *flip card* que permitirá voltear las tarjetas cuando se pase el mouse (desktop) o con un click (celular), donde se visualizarán las características relevantes para nuestros usuarios (*estadística básica, movimientos rápidos, ataques espeaciales y debilidades de cada pokemon*), además de un botón de "*View more*" por si quieren ver más detalles del pokemon seleccionado.
 * El botón de "*View more*", desplegará una ventana modal que muestran las características detalladas de los Pokemon (*de qué trata el pokemon seleccionado, si presenta evoluciones y cuántos caramelos requiere para cada evolución*)
 
-#### Versión desktop
-* Se muestra una pantalla de inicio, donde el jugador podrá elegir un Team acorde al juego
+**_Versión desktop_**
+Se muestra una pantalla de inicio, donde el jugador podrá elegir un Team, para que el usuario se sienta familiarizado con la página.
+
+**_Versión celular_**
+Mostrará la página sin la pantalla de inicio para que puedan visualizar y ejecutar acciones rápidamente.
+
 
 <p align="center">
 <img width="30%" src="https://i.ibb.co/276kkH6/Prototipo-de-alta.jpg" alt="Prototipo-de-alta">
