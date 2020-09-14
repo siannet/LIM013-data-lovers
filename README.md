@@ -46,7 +46,7 @@ Una vez realizada la investigación UX, se plantearon las Historias de Usuarios,
 <img width= 80% src="https://i.ibb.co/qj5X8zK/HU-7-10.jpg" alt="HU-7-10" border="0">
 </p>
 
-## 4. Diseño de Interfaz de Usuario
+## 4. 🚀Diseño de Interfaz de Usuario
 
 En un principio, basándonos en nuestras investigaciones previas acerca del juego (antes de las entrevistas con los potenciales usuarios), ideamos una página web con *log in* y numerosas pestañas para cada funcionalidad, las cuales al ser iteradas con los usuarios, nos sugirieron que tuviera mayor practicidad y que todo se muestre en una sola página, ya que ellos no quieren navegar tanto para encontrar datos de sus pokemon, y también mencionaron la importancia de tener una sección de búsqueda. Es por ello, que en el segundo prototipo mostramos una página más sencilla, que en las entrevistas corroboramos era intuitiva.
 
