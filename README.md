@@ -31,10 +31,12 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
 
 <p align="center">
 <img width="30%" src="https://i.ibb.co/vvT9P7t/Prototipo-de-baja-final.jpg" alt="Prototipo-de-baja-final">
+  <h4 align="center">Segundo prototipo de baja fidelidad</h4>
 </p>
 
 <p align="center">
-<img width="30%" src="https://i.ibb.co/276kkH6/Prototipo-de-alta.jpg" alt="Prototipo-de-alta" border="0">
+<img width="30%" src="https://i.ibb.co/276kkH6/Prototipo-de-alta.jpg" alt="Prototipo-de-alta">
+  <h4 align="center">Prototipo de alta fidelidad en Figma, versión celular y desktop</h4>
 </p>
 
 <p align="center">
