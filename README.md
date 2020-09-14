@@ -12,7 +12,7 @@
 * [3. Historias de usuario](#3-historias-de-usuario)
 * [4. Diseño de Interfaz de Usuario](#4-diseño-de-interfaz-de-usuario)
 * [5. Test de usabilidad](#5-Test-de-usabilidad)
-* [6. Checklist](#9-checklist)
+* [6. Checklist](#6-checklist)
 
 ***
 
