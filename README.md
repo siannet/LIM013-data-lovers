@@ -42,17 +42,10 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
 
 ## 4. Diseño de Interfaz de Usuario
 
-<p>
-<img width="50%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial">
-
-  <img width="30%" src="https://i.ibb.co/vvT9P7t/Prototipo-de-baja-final.jpg" alt="Prototipo-de-baja-final">
-  <h4>Segundo prototipo de baja fidelidad</h4>
- 
-</p>
-
-<p >
-
-  
+<p align="center">
+<img width="40%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial">            
+<img width="30%" src="https://i.ibb.co/vvT9P7t/Prototipo-de-baja-final.jpg" alt="Prototipo-de-baja-final">
+<h4 align="center">Primer y segundo prototipo de baja fidelidad</h4>
 </p>
 
 <p align="center">
