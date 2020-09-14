@@ -12,10 +12,7 @@
 * [3. Historias de usuario](#3-historias-de-usuario)
 * [4. Diseño de Interfaz de Usuario](#4-diseño-de-interfaz-de-usuario)
 * [5. Test de usabilidad](#5-Test-de-usabilidad)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [6. Checklist](#9-checklist)
 
 ***
 
@@ -50,6 +47,8 @@ Una vez realizada la investigación UX, se plantearon las Historias de Usuarios,
 </p>
 
 ## 4. Diseño de Interfaz de Usuario
+
+En un principio, basándonos en nuestras investigaciones previas acerca del juego (antes de las entrevistas con los potenciales usuarios), ideamos una página web con *log in* y numerosas pestañas para cada funcionalidad, las cuales al ser iteradas con los usuarios, nos sugirieron que tuviera mayor practicidad y que todo se muestre en una sola página, ya que ellos no quieren navegar tanto para encontrar datos de sus pokemon, y también mencionaron la importancia de tener una sección de búsqueda. Es por ello, que en el segundo prototipo mostramos una página más sencilla, que en las entrevistas corroboramos era intuitiva.
 
 <p align="center">
 <img width="40%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial" HSPACE="50" VSPACE="50">            
@@ -129,7 +128,7 @@ Como mínimo, tu implementación debe:
    tamaños de pantallas: móviles, tablets y desktops.
 4. Que la interfaz siga los fundamentos de _visual design_.
 
-## 9. Checklist
+## 6. Checklist
 
 * [ ] Usa VanillaJS.
 * [ ] No hace uso de `this`.
