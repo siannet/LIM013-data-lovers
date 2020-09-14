@@ -8,9 +8,9 @@
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Definición del producto](#2-definicion-del-producto)
-* [3. Investigación UX](#3-investigacion-ux)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [3. Historias de usuario](#3-historias-de-usuario)
+* [4. Diseño de Interfaz de Usuario](#4-diseño-de-interfaz-de-usuario)
+* [5. Test de usabilidad](#5-Test-de-usabilidad)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
@@ -23,6 +23,24 @@
 El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde podrá aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica. 
 
 El proyecto se inspiró en el juego **_Pokemon GO_**
+
+## 2. Definición del producto
+
+## 3. Historias de usuario
+
+<p align="center">
+<img src="https://i.ibb.co/jRQr7h8/HU-1-3.jpg" alt="HU-1-3" border="0">
+</p>
+
+<p align="center">
+<img src="https://i.ibb.co/2hctQyS/HU-4-6.jpg" alt="HU-4-6" border="0">
+</p>
+
+<p align="center">
+<img width= 80% src="https://i.ibb.co/qj5X8zK/HU-7-10.jpg" alt="HU-7-10" border="0">
+</p>
+
+## 4. Diseño de Interfaz de Usuario
 
 <p align="center">
 <img width="30%" src="https://i.ibb.co/QnZdvt1/Prototipo-de-baja-inicial.jpg" alt="Prototipo-de-baja-inicial">
@@ -39,17 +57,7 @@ El proyecto se inspiró en el juego **_Pokemon GO_**
   <h4 align="center">Prototipo de alta fidelidad en Figma, versión celular y desktop</h4>
 </p>
 
-<p align="center">
-<img src="https://i.ibb.co/jRQr7h8/HU-1-3.jpg" alt="HU-1-3" border="0">
-</p>
 
-<p align="center">
-<img src="https://i.ibb.co/2hctQyS/HU-4-6.jpg" alt="HU-4-6" border="0">
-</p>
-
-<p align="center">
-<img width= 80% src="https://i.ibb.co/qj5X8zK/HU-7-10.jpg" alt="HU-7-10" border="0">
-</p>
 
 Según [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
