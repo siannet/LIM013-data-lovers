@@ -31,9 +31,11 @@ La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciad
 
 Debido a ello, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad escogido de 10 a 30 años. Elaboramos encuestas para saber que datos priorizan en el juego y entrevistas para analizar sus necesidades e iterar nuestros prototipos. 
 
-De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer), los usuarios querían datos puntuales para armar sus estrategias. Es por ello, que nuestra página web se ajusta a los requerimientos del usuario y lo ayuda de una forma intuitiva y eficaz a la lectura de datos.
+De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer), los usuarios querían datos puntuales para armar sus estrategias. Es por ello, que nuestra página web se ajusta a los requerimientos del usuario y lo ayuda de una forma intuitiva y eficaz a la lectura de datos, *mostrando la data de 251 pokemon* de las regiones Kanto y Johto, con una sección de *búsqueda*, aplicación de *filtros por tipo de pokemon y puntos de combate*, y un *cálculo* rápido de cuántos pokemon representan cada tipo seleccionado.
 
 ## 3. Historias de usuario
+
+Una vez realizada la investigación UX, se plantearon las Historias de Usuarios, las cuales formaron parte de nuestra planificación en Trello. Cada una fue detallada por funcionalidad para poder priorizar y planificar en base a objetivos.
 
 <p align="center">
 <img src="https://i.ibb.co/jRQr7h8/HU-1-3.jpg" alt="HU-1-3" border="0">
