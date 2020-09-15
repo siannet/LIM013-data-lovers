@@ -16,7 +16,7 @@ body {
 /*********Barras de navegación************ */
 .header {
   display: flex;
-  padding: 2% 6% 2% 8%;
+  padding: 2% 6% 1% 8%;
 }
 
 /* logo pokemon */
@@ -51,7 +51,6 @@ body {
   color: grey;
   text-decoration: none;
   font-size: 13px;
-  font-weight: bold;
 }
 
 /* hacer los enlaces interactivos */
@@ -84,6 +83,7 @@ body {
 /* iconos laterales*/
 .search-icon {
   padding: 8px;
+  padding-top: 20px;
   cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ body {
 
 /* Título*/
 .banner-title h1 {
-  padding-top: 20px;
+  padding-top: 24px;
   font-size: 32px;
   margin-bottom: 24px;
   color: #cccccc;
@@ -105,6 +105,7 @@ body {
 
 /* Resaltado del titulo - span */
 .banner-title h1 span {
+  padding-top: 5px;
   font-size: 33px;
   font-family: 'Tomorrow', sans-serif !important;
   color: black;
@@ -128,6 +129,7 @@ body {
 /* ediciones independieentes por icono */
 .social-icon img {
   padding: 5px;
+  padding-top: 8px;
   cursor: pointer;
 }
 
@@ -497,8 +499,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: white;
-  background-color: black;
+  color: gray;
 }
 
 @media screen and (max-width: 768px) {
