@@ -1,5 +1,5 @@
 <p align="center">
-<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="80%" src="https://i.ibb.co/1K0YKyh/Pokedex.jpg" alt="Pokedex">
+<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="80%" src="https://raw.githubusercontent.com/siannet/LIM013-data-lovers/master/src/img/desktop1.png" alt="Pokedex">
   </p>
 
 # POKÉDEX
@@ -20,7 +20,7 @@
 
 El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde podrá aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica.
  Como ejes centrales buscamos:
- 1. Ser persividos como una herramienta indispensable para los usuarios en el desarrollo de sus estrategias de juego.
+ 1. Ser una herramienta indispensable para los usuarios en el desarrollo de sus estrategias de juego.
  2. Fidelizar al usuario brindandole una experiencia integral.
  3. Captar nuevos usuarios incrementando las descargas del juego. 
 
