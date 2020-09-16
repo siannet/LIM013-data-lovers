@@ -87,8 +87,11 @@ Mostrará la página sin la pantalla de inicio para que puedan visualizar y ejec
 
 Gracias al Feedback recibido por parte de nuestros usuarios, compañeras y coaches, pudimos iterar varias veces antes de llegar a nuestra versión final. Tomándose en cuenta principalmente:
 
-* El color del background de nuestro proyecto en un comienzo se regía a los colores del juego, pero distraía mucho al usuario así que lo dejamos en color blanco.
-* La ventana modal era pequeña en la versión desktop y el botón 
+* Barra de busqueda y filtrado segun sus requerimientos
+* Reducción de pantallas en versión movil
+* Paleta de color y logo independientes, representando una extension y no compite con el ojetivo de la app principal.
+* Automatizacion del orden de la informacion basandonos en las cartas pokemon, que era lo que usualmente utilizanban los usuarios antes de la existencia de Pokemon Go
+* Diseño interacctivo en todas sus presentaciones 
 
 ## 6. Checklist
 
