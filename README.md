@@ -1,5 +1,5 @@
 <p align="center">
-<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="80%" src="https://raw.githubusercontent.com/siannet/LIM013-data-lovers/master/src/img/desktop1.png" alt="Pokedex">
+<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="90%" src="https://raw.githubusercontent.com/siannet/LIM013-data-lovers/master/src/img/desktop1.png" alt="Pokedex">
   </p>
 
 # POKÉDEX
