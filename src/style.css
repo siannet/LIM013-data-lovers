@@ -16,14 +16,14 @@ body {
 /*********Barras de navegación************ */
 .header {
   display: flex;
-  padding: 2% 6% 1% 8%;
+  padding: 1% 4% 1% 6%;
 }
 
 /* logo pokemon */
 .logo img {
   width: 180px;
   display: flex;
-  padding: 4px 0px 5px 0px;
+  padding: 8px;
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ body {
 /******************Página 1******************************/
 /* contenedor del texto */
 .banner-title {
-  margin: 0px 130px;
+  margin: 8px 130px;
 }
 
 /* Título*/
@@ -145,7 +145,7 @@ body {
   position: absolute;
   width: 260px;
   height: 440px;
-  margin-top: 70px;
+  margin-top: 86px;
   transition: .6s;
   transform: rotatex(75deg) translatey(-200px) translatez(-100px);
   box-shadow: 0px 20px 60px rgba(59, 59, 59, 0.24);
@@ -203,7 +203,9 @@ body {
 /* pagina de pokemones */
 #pag2 {
   display: none;
-  background-color: white;
+  background: white;
+  background-attachment: fixed;
+  background-position: top;
 }
 
 .banner-team {
@@ -218,7 +220,7 @@ body {
   color: white;
   position: relative;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   /* CORRIGELO */
   font-family: "Tomorrow", sans-serif;
 }
@@ -228,25 +230,31 @@ body {
 }
 
 /*** filtro busqueda y tipo/pc ***/
+.fixedFilters{
+  background-color: gray;
+  padding: 0.5rem 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 54%, 70% 54%, 65% 100%, 35% 100%, 30% 54%, 0 54%);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
 .cajaBusqueda {
-  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 /* barra de busqueda */
 .search {
-  height: 25px;
-  padding-left: 62px;
+  padding: 0.4rem;
   background: #F6F6F6;
   box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.25);
   border-radius: 16px;
-  margin-top: 10px;
+  outline: none;
+  width: 60%;
 }
 
 .filter-container {
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 25;
 }
 .imgTypeFilter{
     height: 70px;
@@ -258,6 +266,7 @@ body {
   cursor: pointer;
   padding: 4px 16px;
   margin: 10px;
+  width: 12%;
 }
 
 /************ lista pokedex ********************/
@@ -340,7 +349,9 @@ figure:hover>figcaption {
   color: white;
   transform: rotateY(180deg);
 }
-
+.text-back ul{
+  padding-left: 18px;
+}
 .text-back ul li {
     text-align: left;
 }
@@ -499,7 +510,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: gray;
+  color: rgb(192, 192, 192);
 }
 
 @media screen and (max-width: 768px) {
@@ -558,6 +569,21 @@ footer {
 
 @media screen and (max-width: 535px) {
 
+  .fixedFilters {
+    padding: 0.5rem;
+    clip-path: polygon(0 0,  100% 0, 100% 50%, 90% 50%, 80% 90%, 20% 90%, 10% 50%, 0 50%);
+  }
+
+  .search {
+    width: 80%;
+}
+
+.filter {
+  padding: 1% 1%;
+  margin: 2% 1% 2% 0;
+  width: 28%;
+}
+
   /*Enlaces: Home, Store, etc*/
   .enlaces {
     flex: 1;
@@ -615,9 +641,9 @@ footer {
     display: none;
   }
 /*linea que separa el header de la pokedex*/
-  .header {
+  /* .header {
     box-shadow: 0 4px 5px rgba(39, 39, 39, 0.6)
-  }
+  } */
 
   .listPokedex {
     display: grid;
