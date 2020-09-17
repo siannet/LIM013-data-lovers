@@ -30,22 +30,30 @@
           </a>
           <a href="index.html">
             <li>
-              <img src="https://img.icons8.com/color/32/000000/new-pokemon.png"/>
+              <img src="https://img.icons8.com/color/26/000000/new-pokemon.png"/>
             HOME</li>
           </a>
           <a href="#">
             <li>
-              <img src="https://img.icons8.com/color/32/000000/pokebag.png"/>
+              <img src="https://img.icons8.com/color/26/000000/pokebag.png"/>
               STORE</li>
           </a>
           <a href="https://pokemongolive.com/es/" target="_blank">
             <li>
-              <img src="https://img.icons8.com/color/32/000000/smartphone.png"/>
+              <img src="https://img.icons8.com/color/26/000000/smartphone.png"/>
               DOWNLOAD</li>
           </a>
         </ul>
       </div>
-    </header>
+    </header> 
+    <!---- Social media -->
+    <div class="social-icon">
+      <a href="https://www.facebook.com/PokemonGO/" target="_blank"><img src="https://img.icons8.com/fluent/32/000000/facebook-new.png" /></a>
+      <a href="https://www.instagram.com/pokemongoapp/?hl=es-la" target="_blank"><img src="https://img.icons8.com/fluent/32/000000/instagram-new.png" /></a>
+      <a href="https://twitter.com/pokemongoapp?lang=es" target="_blank"><img src="https://img.icons8.com/fluent/30/000000/twitter.png" /></a>
+      <a href="https://www.youtube.com/channel/UCA698bls2pjQyiqP9N-iaeg" target="_blank"><img src="https://img.icons8.com/fluent/30/000000/youtube-play.png" /></a>
+    </div>
+
     <!-- Barra de navegación lateral  -->
     <div class="vertical-bar">
       <div class="search-icon">
@@ -57,13 +65,6 @@
       <section id="pag1">
         <audio src="./img/Team.mpeg" autoplay type="audio/mpeg"></audio> 
         <div class="fondo1">
-          <!---- Social media -->
-          <div class="social-icon">
-            <a href="https://www.facebook.com/PokemonGO/" target="_blank"><img src="https://img.icons8.com/fluent/32/000000/facebook-new.png" /></a>
-            <a href="https://www.instagram.com/pokemongoapp/?hl=es-la" target="_blank"><img src="https://img.icons8.com/fluent/32/000000/instagram-new.png" /></a>
-            <a href="https://twitter.com/pokemongoapp?lang=es" target="_blank"><img src="https://img.icons8.com/fluent/30/000000/twitter.png" /></a>
-            <a href="https://www.youtube.com/channel/UCA698bls2pjQyiqP9N-iaeg" target="_blank"><img src="https://img.icons8.com/fluent/30/000000/youtube-play.png" /></a>
-          </div>
           <!-- Team cards -->
           <div id="cartillas">
             <div class="teamValor optionTeam">
@@ -98,8 +99,10 @@
             </div>
           </div>
           <!-- Filtros de búsqueda, tipo y PC -->
-          <div class="cajaBusqueda">
-            <input type="text" class="search" placeholder="Pokename or number"></div>
+          <div class="fixedFilters">
+          <form class="cajaBusqueda">
+            <input type="text" class="search" placeholder="search by name or pokedex number">
+          </form>
           <div class="filter-container">
             <select class="filter type">
               <option value="" disabled selected class="name">TYPE</option>
@@ -129,6 +132,7 @@
               <option value="LESS">LESS</option>
             </select>
           </div>
+        </div>
 
           <!-- Presentación de la Pokedex -->
           <div id="calculate"></div>
