@@ -1,5 +1,5 @@
 <p align="center">
-<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="80%" src="https://i.ibb.co/1K0YKyh/Pokedex.jpg" alt="Pokedex">
+<a title="Pokedex" href= "https://emae1712.github.io/LIM013-data-lovers/src/" target="_blank"><img width="90%" src="https://raw.githubusercontent.com/siannet/LIM013-data-lovers/master/src/img/desktop1.png" alt="Pokedex">
   </p>
 
 # POKÉDEX
@@ -18,17 +18,35 @@
 
 ## 1. 🧐Resumen del proyecto
 
-El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde podrá aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica. 
-
-El proyecto se inspiró en el juego **_Pokemon GO_**
+El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde podrá aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica.
+ Como ejes centrales buscamos:
+ 1. Ser una herramienta indispensable para los usuarios en el desarrollo de sus estrategias de juego.
+ 2. Fidelizar al usuario brindandole una experiencia integral.
+ 3. Captar nuevos usuarios incrementando las descargas del juego. 
 
 ## 2. 👩‍💻Definición del producto
 
-La selección de tema del presente proyecto **_Pokemon GO_**, se vio influenciado por el hecho de ser un juego que ha tenido aceptación en usuarios de rangos de edades muy variadas, asimismo el juego se basa en el anime que hasta ahora sigue vigente.
+<<<<<<< master
+El proyecto se inspiró en el juego **_Pokemon GO_** 
+Pokémon GO es una experiencia de juego internacional que cuenta con más de mil
+millones de descargas y ha sido nombrada "el mejor juego para móviles" por
+Game Developers Choice Awards y "la mejor aplicación del año" por TechCrunch
+(tomado de Google Play).
+=======
+## 2. 👩‍💻Definición del producto
+>>>>>>> master
 
+A raiz de esto, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad escogido de 10 a 30 años. Elaboramos encuestas para saber que datos priorizan en el juego y entrevistas para analizar sus necesidades e iterar nuestros prototipos. 
+
+<<<<<<< master
+De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer), los usuarios querían datos puntuales para armar sus estrategias. Es por ello, que nuestra página web se ajusta a los requerimientos del usuario y lo ayuda de una forma intuitiva y eficaz a la lectura de datos, *mostrando la data de 251 pokemon* de las regiones Kanto y Johto, con una sección de *búsqueda*, aplicación de *filtros por tipo de pokemon y puntos de combate*, y un *cálculo* rápido de cuántos pokemon representan cada tipo seleccionado.
+
+Como valor agregado, en pantallas desktop, desarollamos una interfas mucho mas interactiva. Brindandole al usuario la misma informacion, pero con el plus de poder sentirse parte del mundo de las batallas pokemon de manera personalizada y sin la necesidad de estar en la propia app del juego(solo disponible para movil).Brindandoles una experiencia completa, promoviendo la descarga del juego y fidelizando usuarios. 
+=======
 Debido a ello, como criterio de elección de usuarios, procuramos que sean de edades que representen a los distintos usuarios del juego, siendo el rango de edad escogido de 10 a 30 años. Elaboramos encuestas para saber que datos priorizan en el juego y entrevistas para analizar sus necesidades e iterar nuestros prototipos. 
 
 De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer), los usuarios querían datos puntuales para armar sus estrategias. Es por ello, que nuestra página web se ajusta a los requerimientos del usuario y lo ayuda de una forma intuitiva y eficaz a la lectura de datos, *mostrando la data de 251 pokemon* de las regiones Kanto y Johto, con una sección de *búsqueda*, aplicación de *filtros por tipo de pokemon y puntos de combate*, y un *cálculo* rápido de cuántos pokemon representan cada tipo seleccionado.
+>>>>>>> master
 
 ## 3. 📝Historias de usuario
 
@@ -79,8 +97,16 @@ Mostrará la página sin la pantalla de inicio para que puedan visualizar y ejec
 
 Gracias al Feedback recibido por parte de nuestros usuarios, compañeras y coaches, pudimos iterar varias veces antes de llegar a nuestra versión final. Tomándose en cuenta principalmente:
 
+<<<<<<< master
+* Barra de busqueda y filtrado segun sus requerimientos
+* Reducción de pantallas en versión movil
+* Paleta de color y logo independientes, representando una extension y no compite con el ojetivo de la app principal.
+* Automatizacion del orden de la informacion basandonos en las cartas pokemon, que era lo que usualmente utilizanban los usuarios antes de la existencia de Pokemon Go
+* Diseño interacctivo en todas sus presentaciones 
+=======
 * El color del background de nuestro proyecto en un comienzo se regía a los colores del juego, pero distraía mucho al usuario así que lo dejamos en color blanco.
 * La ventana modal era pequeña en la versión desktop y el botón 
+>>>>>>> master
 
 ## 6. Checklist
 
