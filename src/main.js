@@ -1,39 +1,6 @@
 import { filterTypeOption, sortPcOption, filterInputSearch, statistics } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
-/*-----------PRESENTACIÓN DE LA PAGINA DE INICIO Y DE LA POKEDEX----------*/
-const pag1 = document.getElementById("pag1");
-const pag2 = document.getElementById("pag2");
-const titulo= document.querySelector(".tituloTeam");
-
-//Elección de Team valor
-document.getElementById("valor").addEventListener("click", () => {
-  pag1.style.display = "none";
-  pag2.style.display = "block";
-  titulo.innerHTML=`
-  <h1> VALOR</h1>
-  <p>"OUR FIRES WILL NEVER DIE"</p>
-  `
-})
-//Elección de Team Instinct
-document.getElementById("instinct").addEventListener("click", () => {
-  pag1.style.display = "none";
-  pag2.style.display = "block";
-  titulo.innerHTML=`
-  <h1> INSTINCT</h1>
-  <p>"THERE IS NO SHELTER FROM THE STORM"</p>
-  `
-})
-//Elección de Team Mystic
-document.getElementById("mystic").addEventListener("click", () => {
-  pag1.style.display = "none";
-  pag2.style.display = "block";
-  titulo.innerHTML=`
-  <h1> MYSTIC</h1>
-  <p>"THE POWER OF KNOWLEDGE"</p>
-  `
-})
-
 /*--------------FUNCIÓN QUE CONTIENE LOS DATOS DE LAS CARTILLAS---------------------*/
 const pokedex = (datos) => {
   //Creación de imágenes por Tipo de Pokemon
@@ -443,12 +410,12 @@ type.addEventListener('change', changeTypeEvent);
 pc.addEventListener('change', () => {
   changeTypeEvent(); // permite que trabajen en conjunto
 });
-let search1=document.querySelector(".search1");
+
 /*----------------FUNCION DE BUSQUEDA DE POKEMON----------------------*/
-search1,search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de pokedex y autocompletado
+search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro de pokedex 
   const searchFiltered = filterInputSearch(data.pokemon, search.value);
   const dataFiltradaPorTipo = filterTypeOption(searchFiltered, type.value);
-
+  
   root.innerHTML = "";
   calculate.innerHTML="";
 
@@ -460,19 +427,23 @@ search1,search.addEventListener('keyup', () => {  //mejorar la búsqueda por nro
         </div>
         `
   } else if (searchFiltered.length === 251) { //cuando se borra la busqueda
-    root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ") || //búsqueda con filtros activos
-      searchFiltered.map(pokedex).join(" ");    //búsqueda independiente
+    root.innerHTML = dataFiltradaPorTipo.map(pokedex).join(" ") //búsqueda con filtros activos
+    calculate.innerHTML = `
+    <div class="typeQuantity">
+      <img class="imgTypeFilter" src="./img/${type.value}.png"/>
+      <p>En el tipo <strong>${type.value.toUpperCase()}</strong> hay ${statistics(data.pokemon, type.value)[0]} Pokemon, que representa el ${statistics(data.pokemon, type.value)[1]} %</p>
+    </div>`
+
+    if(type.value === "all-types" || type.value == ""){
+      calculate.innerHTML = "";
+      root.innerHTML=searchFiltered.map(pokedex).join(" ");    //búsqueda independiente sin filtros
+    }
       
   } else {
     root.innerHTML = searchFiltered.map(pokedex).join(" ");   //búsqueda inicial
   }
 
 });
-
-/*------------REINICIO DE LA PÁGINA WEB DANDO CLICK EN EL LOGO---------------------- */
-document.querySelector(".inicio").addEventListener('click', () => {
-  document.location = "index.html";
-})
 
 /*---------------MENÚ HAMBURGUESA----------------------------*/
 const enlaces = document.getElementById("enlaces");

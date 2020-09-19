@@ -73,16 +73,46 @@ body {
   height: 100%;
   background-color: black;
   top: 0;
-  left: 0;
   position: fixed;
-  width: 50px;
+  width: 400px;
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
   z-index: 10;
+  left: -400px;
+}
+.vertical-bar.show{
+  left: 0;
+}
+.vertical-bar h2{
+  color: white;
+}
+/* iconos laterales*/
+.news-icon {
+  position: fixed;
+  z-index: 10;
+  padding: 8px;
+  cursor: pointer;
+  left: 0px;
+  background: black;
+}
+.news-icon.click{
+  left: 400px;
 }
 
-/* iconos laterales*/
-.search-icon {
-  padding: 8px;
+/*barra lateral con redes sociales */
+.social-icon {
+  height: 35%;
+  width: 50px;
+  background: #ffffff;
+  text-align: center;
+  padding-top: 2%;
+  bottom: 0;
+  z-index: 20;
+  position: fixed;
+}
+/* ediciones independieentes por icono */
+.social-icon img {
+  padding: 5px;
+  padding-top: 8px;
   cursor: pointer;
 }
 
@@ -109,27 +139,6 @@ body {
   font-family: 'Tomorrow', sans-serif !important;
   color: black;
   font-weight: bold;
-}
-
-/*barra lateral con redes sociales */
-.social-icon {
-  height: 35%;
-  width: 50px;
-  background: #ffffff;
-  ;
-  text-align: center;
-  padding-top: 2%;
-  bottom: 0;
-  position: absolute;
-  z-index: 20;
-  position: fixed;
-}
-
-/* ediciones independieentes por icono */
-.social-icon img {
-  padding: 5px;
-  padding-top: 8px;
-  cursor: pointer;
 }
 
 /* cartillas por team */
@@ -214,6 +223,15 @@ body {
   position: relative;
   margin-top: 16px;
 }
+.banner-team.valor{
+  background-color: #b92025;
+}
+.banner-team.instinct{
+  background-color: darkgoldenrod;
+}
+.banner-team.mystic{
+  background-color: darkslateblue;
+}
 
 .tituloTeam {
   color: white;
@@ -230,7 +248,7 @@ body {
 
 /*** filtro busqueda y tipo/pc ***/
 .fixedFilters{
-  background-color: gray;
+  background-color:  rgba(105, 105, 105, 0.8);
   padding: 0.5rem 0 0;
   clip-path: polygon(0 0, 100% 0, 100% 54%, 70% 54%, 65% 100%, 35% 100%, 30% 54%, 0 54%);
   position: sticky;
@@ -278,7 +296,7 @@ body {
 /* contenedor de caja pokemon */
 .boxPokedex {
   max-width: 260px;
-  min-height: 360px;
+  min-height: 400px;
   display: flex;
 }
 
@@ -321,6 +339,7 @@ figure:hover>figcaption {
 
 #calculate {
   text-align: center;
+  padding-top: 0.5rem;
 }
 
 /* carta frontal/efecto flip-card */
@@ -370,6 +389,7 @@ figure:hover>figcaption {
   font-size: 16px;
   padding: 5px 10px;
   cursor: pointer;
+  margin-top: 6px;
 }
 
 /**************ventana modal ******************/
@@ -424,7 +444,11 @@ figure:hover>figcaption {
   margin: 2%;
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.6);
 }
-
+.modalContent h3{
+  border-bottom: 3px solid #64b3f4;
+  display: table;
+  margin: auto;
+}
 /* imagen pokemon */
 .pokemonImg {
   position: relative;
@@ -478,6 +502,11 @@ div>.pokemonSelected {
     padding: 4px;
     border-radius: 50%;
     cursor: pointer;
+    font-weight: bold;
+    background-color: rgba(4, 59, 92, .3);
+    color: #c2e59c;
+    border: 2px solid #c2e59c;
+
 }
 
 .hamburger-container {
@@ -509,11 +538,11 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: rgb(192, 192, 192);
+  color: rgb(105, 105, 105);
 }
 
 @media screen and (max-width: 768px) {
-  .social-icon {
+  .social-icon, .news-icon{
     display: none;
   }
 
@@ -656,7 +685,7 @@ footer {
 
   .boxPokedex {
     max-width: 260px;
-    min-height: 375px;
+    min-height: 420px;
     display: flex;
   }
   .moreInformation{
