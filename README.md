@@ -21,7 +21,7 @@
 El presente proyecto, llamado **_POKÉDEX_**, es una aplicación web donde el usuario puede ver información clave antes de inciar una batalla Pokemon. Información de 251 Pokemon de las regiones Kanto y Johto, dónde podrá aplicar filtros, ordenarlos por PC, hacer una búsqueda rápida, entre otros, todo de forma dinámica.
  Como ejes centrales buscamos:
  1. Ser una herramienta indispensable para los usuarios en el desarrollo de sus estrategias de juego.
- 2. Fidelizar al usuario brindandole una experiencia integral.
+ 2. Fidelizar al usuario brindándole una experiencia integral.
  3. Captar nuevos usuarios incrementando las descargas del juego. 
 
 ## 2. 👩‍💻Definición del producto
@@ -36,7 +36,7 @@ A raiz de esto, como criterio de elección de usuarios, procuramos que sean de e
 
 De las encuestas y las entrevistas realizadas concluimos que nuestros usuarios querían una página que les brindara información clave antes de **iniciar una batalla Pokemon**, mas que informativo (que en un principio pensamos hacer), los usuarios querían datos puntuales para armar sus estrategias. Es por ello, que nuestra página web se ajusta a los requerimientos del usuario y lo ayuda de una forma intuitiva y eficaz a la lectura de datos, *mostrando la data de 251 pokemon* de las regiones Kanto y Johto, con una sección de *búsqueda*, aplicación de *filtros por tipo de pokemon y puntos de combate*, y un *cálculo* rápido de cuántos pokemon representan cada tipo seleccionado.
 
-Como valor agregado, en pantallas desktop, desarollamos una interfas mucho mas interactiva. Brindandole al usuario la misma informacion, pero con el plus de poder sentirse parte del mundo de las batallas pokemon de manera personalizada y sin la necesidad de estar en la propia app del juego(solo disponible para movil).Brindandoles una experiencia completa, promoviendo la descarga del juego y fidelizando usuarios. 
+Como valor agregado, en pantallas desktop, desarollamos una interfaz mucho más interactiva. Brindándole al usuario la misma información, pero con el plus de poder sentirse parte del mundo de las batallas Pokemon de manera personalizada y sin la necesidad de estar en la propia app del juego(sólo disponible para movil).Brindándoles una experiencia completa, promoviendo la descarga del juego y fidelizando usuarios. 
 
 ## 3. 📝Historias de usuario
 
@@ -87,11 +87,11 @@ Mostrará la página sin la pantalla de inicio para que puedan visualizar y ejec
 
 Gracias al Feedback recibido por parte de nuestros usuarios, compañeras y coaches, pudimos iterar varias veces antes de llegar a nuestra versión final. Tomándose en cuenta principalmente:
 
-* Barra de busqueda y filtrado segun sus requerimientos
-* Reducción de pantallas en versión movil
-* Paleta de color y logo independientes, representando una extension y no compite con el ojetivo de la app principal.
-* Automatizacion del orden de la informacion basandonos en las cartas pokemon, que era lo que usualmente utilizanban los usuarios antes de la existencia de Pokemon Go
-* Diseño interacctivo en todas sus presentaciones 
+* Barra de búsqueda y filtrado segun sus requerimientos
+* Reducción de pantallas en versión mobile
+* Paleta de color y logo independientes, representando una extensión y no compite con el ojetivo de la app principal.
+* Automatización del orden de la información basándonos en las cartas Pokemon, que era lo que usualmente utilizanban los usuarios antes de la existencia de Pokemon Go
+* Diseño interactivo en todas sus presentaciones 
 
 ## 6. Checklist
 
