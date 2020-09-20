@@ -33,8 +33,31 @@ document.getElementById("mystic").addEventListener("click", () => {
   `
   document.querySelector(".banner-team").classList.add("mystic");
 })
-//Ventana lateral
+
+/*---------------------Ventana lateral-------------------------*/
 document.querySelector(".news-icon").addEventListener('click', ()=>{
     document.querySelector(".news-icon").classList.toggle("click");
     document.querySelector(".vertical-bar").classList.toggle("show");
   })
+
+/*----------------- Efecto Scroll up--------------------------------*/
+
+window.onscroll = function(){
+    const currentScroll = document.documentElement.scrollTop; //desplazamiento desde la parte superior de la pagina
+    
+    //condicion para desaparecer boton cuando llegue a top
+    if (currentScroll > 500){ //desplazamiento mayor a 500px mostrar botón
+      document.querySelector(".scrollUp").style.transform = "scale(1)";
+    }else{ //desaparecer boton en menos de 500px
+      document.querySelector(".scrollUp").style.transform = "scale(0)";
+    }
+
+    //evento que me permite ir a top con click
+    document.querySelector(".scrollUp").addEventListener("click", scroll = ()=>{
+    if (currentScroll > 0){ 
+        window.requestAnimationFrame(scroll); //creando animacion 
+        window.scrollTo (0, currentScroll-(currentScroll/8)); //sin animacion seria window.scrollTo (0,0) ejex ejey 0
+    }
+  
+  })
+}
