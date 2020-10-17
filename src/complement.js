@@ -37,6 +37,7 @@ document.getElementById("mystic").addEventListener("click", () => {
 /*---------------------Ventana lateral-------------------------*/
 document.querySelector(".news-icon").addEventListener('click', ()=>{
     document.querySelector(".news-icon").classList.toggle("click");
+    document.querySelector(".social-icon").classList.toggle("click");
     document.querySelector(".vertical-bar").classList.toggle("show");
   })
 
@@ -61,3 +62,18 @@ window.onscroll = function(){
   
   })
 }
+
+/* ----------------Slideshow images------------------- */
+let myIndex = 0;
+const carousel = () => {
+  const x = document.getElementsByClassName('img-aside');
+  for (let i = 0; i < x.length; i += 1) {
+    x[i].style.display = 'none';
+  }
+  myIndex += 1;
+  if (myIndex > x.length) { myIndex = 1; }
+  x[myIndex - 1].style.display = 'block';
+  document.querySelector('.img-aside-text').innerHTML = x[myIndex - 1].alt;
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+};
+carousel();
